@@ -1,0 +1,22 @@
+jar {
+    manifest {
+        instruction 'Export-Package', '*'
+        instruction 'Import-Package', '*'
+
+    }
+}.doLast {
+    // copy manifest to location where the IDE can use it to let us know when we breach OSGi restrictions!
+    jar.manifest.writeTo(project.file('generated-sources/MANIFEST.MF'))
+}
+dependencies {
+    compile 'org.apache.servicemix.bundles:org.apache.servicemix.bundles.solr-solrj:5.3.1_1'
+    compile 'org.apache.servicemix.bundles:org.apache.servicemix.bundles.commons-io:1.4_3'
+
+    compile 'org.apache.httpcomponents:httpclient:4.5.1'
+    compile 'org.apache.solr:solr-noggit:3.5.0'
+    compile 'org.noggit:noggit:0.5'
+
+    compile 'org.osgi:org.osgi.service.http:1.2.1'
+
+    compile 'org.apache.httpcomponents:httpmime:4.5.1'
+}

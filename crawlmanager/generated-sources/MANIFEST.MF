@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Private-Package: io.egreen.seed.crawler.manager,io.egreen.seed.crawler
+ .manager.analysing,io.egreen.seed.crawler.manager.analysing.impl,io.e
+ green.seed.crawler.manager.processors
+Bundle-Version: 0.0.0.unspecified
+Tool: Bnd-2.1.0.20130426-122213
+Bundle-Name: crawlmanager
+Bnd-LastModified: 1449823254000
+Created-By: 1.7.0_85 (Oracle Corporation)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: platform.crawlmanager
+Import-Package: io.egreen.seed.cyloon.crawler,io.egreen.seed.cyloon.cr
+ awler.dbclient,io.egreen.seed.cyloon.crawler.dbclient.db.entity,io.eg
+ reen.seed.indexing,io.egreen.seed.indexing.model,org.apache.solr.clie
+ nt.solrj;version="[5.3,6)",org.jsoup;version="[1.7,2)",org.jsoup.node
+ s;version="[1.7,2)",org.jsoup.select;version="[1.7,2)"
+

@@ -1,0 +1,9 @@
+rootProject.name = 'platform'
+include 'dbsearchbridge'
+include 'dbclient'
+include 'httpservicemodule'
+include 'configmanager'
+include 'crawlmanager'
+include 'crawlprocessor'
+include 'indexmanager'
+

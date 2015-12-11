@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Export-Package: io.egreen.seed.dbsearchbridge;uses:="org.apache.solr.c
+ lient.solrj,org.osgi.service.http"
+Bundle-Version: 0.0.0.unspecified
+Tool: Bnd-2.1.0.20130426-122213
+Bundle-Name: dbsearchbridge
+Bnd-LastModified: 1449823255000
+Created-By: 1.7.0_85 (Oracle Corporation)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: platform.dbsearchbridge
+Import-Package: org.apache.solr.client.solrj;version="[5.3,6)",org.apa
+ che.solr.client.solrj.beans;version="[5.3,6)",org.apache.solr.client.
+ solrj.impl;version="[5.3,6)",org.apache.solr.client.solrj.response;ve
+ rsion="[5.3,6)",org.osgi.service.http;version="[1.2,2)"
+

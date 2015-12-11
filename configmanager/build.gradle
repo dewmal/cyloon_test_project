@@ -1,0 +1,12 @@
+jar {
+    manifest {
+        instruction 'Export-Package', '*'
+
+
+    }
+}.doLast {
+    // copy manifest to location where the IDE can use it to let us know when we breach OSGi restrictions!
+    jar.manifest.writeTo(project.file('generated-sources/MANIFEST.MF'))
+}
+dependencies {
+}

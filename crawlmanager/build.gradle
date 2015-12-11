@@ -1,0 +1,19 @@
+jar {
+    manifest {
+        instruction 'Export-Package', ''
+        instruction 'Import-Package', '*'
+
+    }
+}.doLast {
+    // copy manifest to location where the IDE can use it to let us know when we breach OSGi restrictions!
+    jar.manifest.writeTo(project.file('generated-sources/MANIFEST.MF'))
+}
+dependencies {
+    compile project(':crawlprocessor')
+    compile project(':dbclient')
+    compile project(':httpservicemodule')
+    compile project(':indexmanager')
+    compile 'org.mapdb:mapdb:2.0-beta12'
+    compile group: 'org.jsoup', name: 'jsoup', version: '1.7.1'
+
+}
