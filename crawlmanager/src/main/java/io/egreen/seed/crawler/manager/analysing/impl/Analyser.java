@@ -65,7 +65,7 @@ public class Analyser implements IAnalyser {
             IndexSiteData indexSiteData = new IndexSiteData();
             try {
                 String id = dbClientService.save(siteData);
-
+                System.out.println(id);
                 indexSiteData.setPost_last_update_time(siteData.getPostDateTime());
                 indexSiteData.setTitle(siteData.getTitle());
                 indexSiteData.setDescription(siteData.getContent());

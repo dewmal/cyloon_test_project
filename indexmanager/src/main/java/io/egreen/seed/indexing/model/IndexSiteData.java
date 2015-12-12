@@ -9,8 +9,13 @@ import java.util.Date;
  */
 public class IndexSiteData {
 
+
+
+
     @Field(child = false)
     private String post_id;
+    @Field(child = false)
+    private String id;
     @Field(child = false)
     private String title;
     @Field(child = false)
@@ -26,6 +31,13 @@ public class IndexSiteData {
     @Field()
     private Date post_last_update_time;
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getPost_id() {
         return post_id;
@@ -94,7 +106,9 @@ public class IndexSiteData {
     @Override
     public String toString() {
         return "IndexSiteData{" +
-                "title='" + title + '\'' +
+                "post_id='" + post_id + '\'' +
+                ", id='" + id + '\'' +
+                ", title='" + title + '\'' +
                 ", price=" + price +
                 ", location='" + location + '\'' +
                 ", ownerName='" + ownerName + '\'' +

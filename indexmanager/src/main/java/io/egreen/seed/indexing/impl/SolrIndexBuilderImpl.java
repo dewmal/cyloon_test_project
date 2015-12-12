@@ -7,11 +7,16 @@ import org.apache.felix.ipojo.annotations.Instantiate;
 import org.apache.felix.ipojo.annotations.Provides;
 import org.apache.felix.ipojo.annotations.Requires;
 import org.apache.solr.client.solrj.SolrClient;
+import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
+import org.apache.solr.client.solrj.response.QueryResponse;
+import org.apache.solr.common.params.MultiMapSolrParams;
 import org.osgi.service.log.LogService;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by dewmal on 12/10/15.
@@ -20,7 +25,7 @@ import java.io.IOException;
 @Component
 @Instantiate
 @Provides
-public class SolrIndexBuilderImpl implements SolrIndexBuilder{
+public class SolrIndexBuilderImpl implements SolrIndexBuilder {
 
     @Requires
     private LogService logService;
@@ -39,9 +44,18 @@ public class SolrIndexBuilderImpl implements SolrIndexBuilder{
     //    @Override
     public void indexing(IndexSiteData indexSiteData) throws IOException, SolrServerException {
         logService.log(LogService.LOG_DEBUG, indexSiteData + "");
-//        System.out.println(indexSiteData);
+        System.out.println(indexSiteData);
 //        solrClient.
-        solrClient.addBean(indexSiteData);
+//        MultiMapSolrParams solrParams = new MultiMapSolrParams(new HashMap<String, String[]>());
+
+        SolrQuery query = new SolrQuery();
+        query.setQuery(indexSiteData.getPost_id());
+//        query.setSort(new SolrQuery.SortClause())
+        QueryResponse query1 = solrClient.query(query);
+        List<IndexSiteData> beans = query1.getBeans(IndexSiteData.class);
+        if (beans != null && beans.size() == 0) {
+            solrClient.addBean(indexSiteData);
+        }
         solrClient.commit();
     }
 }

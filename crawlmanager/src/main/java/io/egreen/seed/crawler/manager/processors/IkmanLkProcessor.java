@@ -20,17 +20,14 @@ import java.util.regex.Pattern;
 /**
  * Created by dewmal on 10/12/15.
  */
-public class IkmanLkProcessor implements IWebPageProcessor {
+public class IkmanLkProcessor extends AbstractWebPageProcessor implements IWebPageProcessor {
 
-
-    private IAnalyser iAnalyser;
 
     public IkmanLkProcessor(IAnalyser iAnalyser) {
-
-        this.iAnalyser = iAnalyser;
+        super(iAnalyser);
     }
 
-    public SiteData getCrawlerModel(Document doc) throws HttpStatusException {
+    public SiteData getCrawlerModel(Document doc, String url) throws HttpStatusException {
         SiteData siteData = new SiteData();
 
 
@@ -127,18 +124,5 @@ public class IkmanLkProcessor implements IWebPageProcessor {
         return Pattern.matches("^(http|https)://ikman.lk/(en|si)/(ads|ad)/.*", base);
     }
 
-    @Override
-    public void process(String url, Document document) {
-        try {
-            SiteData crawlerModel = getCrawlerModel(document);
-            crawlerModel.setLink(url);
 
-//            if (iAnalyser != null) {
-                iAnalyser.analyse(crawlerModel);
-//            }
-//            System.out.println(crawlerModel);
-        } catch (HttpStatusException e) {
-            e.printStackTrace();
-        }
-    }
 }

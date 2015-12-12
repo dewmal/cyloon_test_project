@@ -2,6 +2,7 @@ package io.egreen.seed.crawler.manager;
 
 import io.egreen.seed.crawler.manager.analysing.IAnalyser;
 import io.egreen.seed.crawler.manager.analysing.impl.Analyser;
+import io.egreen.seed.crawler.manager.processors.HitAddProcessor;
 import io.egreen.seed.crawler.manager.processors.IkmanLkProcessor;
 import io.egreen.seed.cyloon.crawler.ICrawler;
 import org.apache.felix.ipojo.annotations.Component;
@@ -26,20 +27,14 @@ public class Mainager5 {
 //    private SolrIndexBuilder solrIndexBuilder;
 
 
-
-
-
     @Validate
     private void start() {
 
-
-        System.out.println("Working Crawling manager");
-        System.out.println(iCrawler);
         try {
-            iCrawler.crawl("http://ikman.lk/", new IkmanLkProcessor(iAnalyser), "http://ikman.lk/", "http://ikman.lk/en/ads/ads-in-sri-lanka");
+//            iCrawler.crawl("http://ikman.lk/", new IkmanLkProcessor(iAnalyser), "http://ikman.lk/", "http://ikman.lk/en/ads/ads-in-sri-lanka");
+            iCrawler.crawl("http://www.hitad.lk/", new HitAddProcessor(iAnalyser), "http://www.hitad.lk/", "http://www.hitad.lk/EN/property");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println(iCrawler);
     }
 }

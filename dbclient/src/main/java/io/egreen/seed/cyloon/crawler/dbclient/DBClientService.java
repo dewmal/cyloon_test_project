@@ -45,10 +45,10 @@ public class DBClientService implements IDBClient {
         String id = null;
 //        System.out.println(siteData);
 
-        MongoCollection sitedata=null;
+        MongoCollection sitedata = null;
         try {
             sitedata = jongo.getCollection("sitedata");
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -58,6 +58,7 @@ public class DBClientService implements IDBClient {
 
         if (data != null) {
             sitedata.update(new ObjectId(data.get_id())).with(siteData);
+            siteData.set_id(data.get_id());
         } else {
             WriteResult save = sitedata.save(siteData);
             System.out.println(save);
