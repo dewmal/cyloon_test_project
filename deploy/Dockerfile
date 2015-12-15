@@ -8,7 +8,7 @@ RUN apt-get install -y git
 # Make ssh dir
 RUN mkdir /cyloon
 WORKDIR /cyloon
-ADD . /cyloon
+ADD . /cyloon2
 RUN git clone https://github.com/dewmal/cyloon_test_project.git
 
 WORKDIR /cyloon/cyloon_test_project
