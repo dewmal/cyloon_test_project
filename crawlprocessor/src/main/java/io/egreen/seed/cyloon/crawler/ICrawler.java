@@ -5,5 +5,5 @@ package io.egreen.seed.cyloon.crawler;
  */
 public interface ICrawler{
 
-        void crawl(String baseurl, IWebPageProcessor webPageProcessor, String... seeds) throws InterruptedException;
+        void crawl(String name,String baseurl, IWebPageProcessor webPageProcessor, String... seeds) throws InterruptedException;
 }

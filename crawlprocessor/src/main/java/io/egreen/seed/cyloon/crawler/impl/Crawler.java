@@ -1,9 +1,6 @@
 package io.egreen.seed.cyloon.crawler.impl;
 
-import io.egreen.seed.cyloon.crawler.CrawlerMT;
-import io.egreen.seed.cyloon.crawler.ICrawler;
-import io.egreen.seed.cyloon.crawler.IWebPageProcessor;
-import io.egreen.seed.cyloon.crawler.SameWebsiteOnlyFilter;
+import io.egreen.seed.cyloon.crawler.*;
 import org.apache.felix.ipojo.annotations.Component;
 import org.apache.felix.ipojo.annotations.Instantiate;
 import org.apache.felix.ipojo.annotations.Provides;
@@ -26,10 +23,15 @@ public class Crawler implements ICrawler {
     @Requires
     private LogService logService;
 
+
     private static final List<IWebPageProcessor> PROCESSORS = new ArrayList<IWebPageProcessor>();
 
 
     private ScheduledExecutorService executorService = Executors.newScheduledThreadPool(4);
+
+    private ExecutorService executor = Executors.newCachedThreadPool();
+
+
     private IWebPageProcessor WebPageProcessor = new IWebPageProcessor() {
         @Override
         public boolean accept(String base) {
@@ -52,13 +54,24 @@ public class Crawler implements ICrawler {
     };
 
     @Override
-    public void crawl(String baseurl, IWebPageProcessor webPageProcessor, String... seeds) throws InterruptedException {
+    public void crawl(final String name, final String baseurl, final IWebPageProcessor webPageProcessor, final String... seeds) throws InterruptedException {
+//        executor.submit(new Runnable() {
+//            @Override
+////            public void run() {
         PROCESSORS.add(webPageProcessor);
 //        System.out.println(PROCESSORS);
         String url = baseurl;
-        CrawlerMT crawler = new CrawlerMT(logService, new SameWebsiteOnlyFilter(url), this.WebPageProcessor);
-        crawler.addUrl(seeds);
+        CrawlerMT crawler = new CrawlerMT(name, logService,new DBHelper(name), new SameWebsiteOnlyFilter(url), Crawler.this.WebPageProcessor);
+        try {
+            crawler.addUrl(seeds);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         crawler.crawl();
+//            }
+//        });
+
+
     }
 
 

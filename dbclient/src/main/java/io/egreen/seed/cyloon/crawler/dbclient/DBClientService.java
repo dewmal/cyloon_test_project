@@ -27,9 +27,9 @@ public class DBClientService implements IDBClient {
     private DB db;
 
     public DBClientService() {
-
         db = new MongoClient("208.43.16.210", 27017).getDB("crawler_date_classified");
         jongo = new Jongo(db);
+        System.out.println("Hello DB");
     }
 
     @PostRegistration
@@ -44,6 +44,7 @@ public class DBClientService implements IDBClient {
     public String save(SiteData siteData) {
         String id = null;
 //        System.out.println(siteData);
+        System.out.println("Hello DB");
 
         MongoCollection sitedata = null;
         try {

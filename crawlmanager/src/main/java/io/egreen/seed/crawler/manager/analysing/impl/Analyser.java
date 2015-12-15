@@ -62,24 +62,25 @@ public class Analyser implements IAnalyser {
 
         @Override
         public void run() {
-            IndexSiteData indexSiteData = new IndexSiteData();
-            try {
-                String id = dbClientService.save(siteData);
-                System.out.println(id);
-                indexSiteData.setPost_last_update_time(siteData.getPostDateTime());
-                indexSiteData.setTitle(siteData.getTitle());
-                indexSiteData.setDescription(siteData.getContent());
-                indexSiteData.setLocation(siteData.getLocation());
-                indexSiteData.setPrice(siteData.getPrice());
-                indexSiteData.setKeywords(siteData.getKeywords());
-                indexSiteData.setPost_id(id);
-//
-                solrIndexBuilder.indexing(indexSiteData);
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (SolrServerException e) {
-                e.printStackTrace();
-            }
+            System.out.println(siteData);
+//            IndexSiteData indexSiteData = new IndexSiteData();
+//            try {
+//                String id = dbClientService.save(siteData);
+////                System.out.println(id);
+//                indexSiteData.setPost_last_update_time(siteData.getPostDateTime());
+//                indexSiteData.setTitle(siteData.getTitle());
+//                indexSiteData.setDescription(siteData.getContent());
+//                indexSiteData.setLocation(siteData.getLocation());
+//                indexSiteData.setPrice(siteData.getPrice());
+//                indexSiteData.setKeywords(siteData.getKeywords());
+//                indexSiteData.setPost_id(id);
+////
+//                solrIndexBuilder.indexing(indexSiteData);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            } catch (SolrServerException e) {
+//                e.printStackTrace();
+//            }
         }
     }
 }

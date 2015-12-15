@@ -29,10 +29,9 @@ public class Mainager5 {
 
     @Validate
     private void start() {
-
         try {
-//            iCrawler.crawl("http://ikman.lk/", new IkmanLkProcessor(iAnalyser), "http://ikman.lk/", "http://ikman.lk/en/ads/ads-in-sri-lanka");
-            iCrawler.crawl("http://www.hitad.lk/", new HitAddProcessor(iAnalyser), "http://www.hitad.lk/", "http://www.hitad.lk/EN/property");
+            iCrawler.crawl("ikman", "http://ikman.lk/", new IkmanLkProcessor(iAnalyser), "http://ikman.lk/", "http://ikman.lk/en/ads/ads-in-sri-lanka");
+            iCrawler.crawl("hitad", "http://www.hitad.lk/", new HitAddProcessor(iAnalyser), "http://www.hitad.lk/", "http://www.hitad.lk/EN/property");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

@@ -44,6 +44,8 @@ dependencies {
 //    }
 
     osgiRuntime 'org.slf4j:slf4j-simple:1.7.7'
+    osgiRuntime 'org.apache.ant:ant:1.9.6'
+
     osgiRuntime 'org.apache.felix:org.osgi.compendium:1.4.0'
 
     osgiRuntime 'log4j:log4j:1.2.17'
@@ -65,7 +67,7 @@ runOsgi {
 //    outDir = clientConfig ? 'client' : 'server'
     config += [
             'felix.log.level'                         : 4,
-            'org.osgi.framework.system.packages.extra': 'sun.reflect,sun.misc,sun.nio.ch,com.sun.jdmk.comm',
+            'org.osgi.framework.system.packages.extra': 'sun.reflect,sun.misc,sun.nio.ch,com.sun.jdmk.comm,com.sun.tools.jconsole,sun.tools.jconsole',
             'core.cyloon.crawler.path'                : '/home/dewmal/projects/production/seed/db/db.cyloon'
     ]
     wrapInstructions {

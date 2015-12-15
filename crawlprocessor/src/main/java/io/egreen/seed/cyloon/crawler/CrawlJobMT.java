@@ -69,7 +69,6 @@ public class CrawlJobMT implements Runnable {
                     String normalizedUrl = UrlNormalizer.normalize(linkUrl, baseUrl);
                     urls[i] = normalizedUrl;
                     i++;
-
 //                    System.out.println(" - " + normalizedUrl);
 
                 }

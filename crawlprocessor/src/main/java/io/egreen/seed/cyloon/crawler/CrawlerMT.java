@@ -10,7 +10,7 @@ import java.util.concurrent.*;
  * @author Jakob Jenkov and Emmanuel John
  */
 public class CrawlerMT {
-
+    private final String name;
     protected final LogService logService;
 
     protected IUrlFilter urlFilter = null;
@@ -18,7 +18,7 @@ public class CrawlerMT {
 
     protected Set<String> crawledUrls = new HashSet<String>();
     private ScheduledExecutorService crawlService;
-    private DBHelper dbHelper = new DBHelper();
+    private DBHelper dbHelper;
 
     //    protected final LinkedBlockingQueue<String> linksQueue = new LinkedBlockingQueue();
     protected CyclicBarrier barrier = new CyclicBarrier(2);
@@ -27,8 +27,11 @@ public class CrawlerMT {
     private boolean crawlerRunning = false;
 
 
-    public CrawlerMT(LogService logService, IUrlFilter urlFilter, IWebPageProcessor webPageProcessor) {
+    public CrawlerMT(String name, LogService logService, DBHelper dbHelper, IUrlFilter urlFilter, IWebPageProcessor webPageProcessor) {
+        this.name = name;
+
         this.logService = logService;
+        this.dbHelper = dbHelper;
         this.urlFilter = urlFilter;
         this.webPageProcessor = webPageProcessor;
         if (crawlService == null) {
@@ -38,6 +41,8 @@ public class CrawlerMT {
 
 
     public void addUrl(String... url) throws InterruptedException {
+
+//        System.out.println(url);
         dbHelper.add(url);
         if (!crawlerRunning && isCrawlerRun) {
             crawl();
@@ -49,7 +54,7 @@ public class CrawlerMT {
     public void crawl() {
         logService.log(LogService.LOG_DEBUG, "Again" + dbHelper.linksQueue.size() + "");
 
-        System.out.println("Start again");
+        System.out.println("Start again - " + name + " - " + dbHelper.linksQueue.size());
         isCrawlerRun = true;
         crawlerRunning = true;
 
@@ -66,13 +71,9 @@ public class CrawlerMT {
             } catch (Exception ex) {
                 ex.printStackTrace();
             }
-
             if (nextUrl == null)
                 System.out.println("queue is null here");
-
             if (!shouldCrawlUrl(nextUrl)) continue; // skip this URL.
-
-
             this.crawledUrls.add(nextUrl);
             logService.log(LogService.LOG_DEBUG, "Visit" + nextUrl + "");
 

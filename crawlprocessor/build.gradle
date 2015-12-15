@@ -10,7 +10,8 @@ jar {
 }
 dependencies {
 //    compile project(':crawlprocessor')
-    compile 'org.mapdb:mapdb:2.0-beta12'
+    compile 'com.sleepycat:je:4.0.92'
+
     compile group: 'org.jsoup', name: 'jsoup', version: '1.7.1'
 
 }
