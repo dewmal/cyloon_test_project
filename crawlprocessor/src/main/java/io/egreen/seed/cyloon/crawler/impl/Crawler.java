@@ -58,16 +58,22 @@ public class Crawler implements ICrawler {
 //        executor.submit(new Runnable() {
 //            @Override
 ////            public void run() {
-        PROCESSORS.add(webPageProcessor);
+        executor.submit(new Runnable() {
+            @Override
+            public void run() {
+
+                PROCESSORS.add(webPageProcessor);
 //        System.out.println(PROCESSORS);
-        String url = baseurl;
-        CrawlerMT crawler = new CrawlerMT(name, logService,new DBHelper(name), new SameWebsiteOnlyFilter(url), Crawler.this.WebPageProcessor);
-        try {
-            crawler.addUrl(seeds);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        crawler.crawl();
+                String url = baseurl;
+                CrawlerMT crawler = new CrawlerMT(name, logService, new DBHelper(name), new SameWebsiteOnlyFilter(url), Crawler.this.WebPageProcessor);
+                try {
+                    crawler.addUrl(seeds);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                crawler.crawl();
+            }
+        });
 //            }
 //        });
 
