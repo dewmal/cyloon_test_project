@@ -72,8 +72,10 @@ public class CrawlJobMT implements Runnable {
 //                    System.out.println(" - " + normalizedUrl);
 
                 }
-                crawler.logService.log(LogService.LOG_DEBUG,"Processed URL "+url);
-                crawler.addUrl(urls);
+                crawler.logService.log(LogService.LOG_DEBUG, "Processed URL " + url);
+                synchronized (crawler) {
+                    crawler.addUrl(urls);
+                }
                 if (crawler.barrier.getNumberWaiting() == 1) {
                     crawler.barrier.await();
                 }
@@ -84,7 +86,7 @@ public class CrawlJobMT implements Runnable {
                 Logger.getLogger(CrawlJobMT.class.getName()).log(Level.SEVERE, null, ex);
             } catch (BrokenBarrierException ex) {
                 Logger.getLogger(CrawlJobMT.class.getName()).log(Level.SEVERE, null, ex);
-            }catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         } catch (IOException e) {

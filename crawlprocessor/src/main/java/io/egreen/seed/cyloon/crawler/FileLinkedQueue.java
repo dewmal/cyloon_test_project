@@ -15,6 +15,7 @@ public class FileLinkedQueue extends LinkedBlockingQueue {
     private Environment env;
     private String dbName;
 
+
     private boolean ok = false;
 
     public FileLinkedQueue(String dbName) {
@@ -65,20 +66,20 @@ public class FileLinkedQueue extends LinkedBlockingQueue {
 
 
         try {
-            System.out.println(take);
-            synchronized (database) {
-                Transaction transaction = env.beginTransaction(null, null);
-                Cursor cursor = database.openCursor(transaction, null);
-                DatabaseEntry key = new DatabaseEntry((take + "").getBytes());
-                DatabaseEntry value = new DatabaseEntry();
-                OperationStatus result = cursor.getSearchKey(key, value, null);
+//            System.out.println(take);
+//            synchronized (database) {
+            Transaction transaction = env.beginTransaction(null, null);
+            Cursor cursor = database.openCursor(transaction, null);
+            DatabaseEntry key = new DatabaseEntry((take + "").getBytes());
+            DatabaseEntry value = new DatabaseEntry();
+            OperationStatus result = cursor.getSearchKey(key, value, null);
 
-                if (result == OperationStatus.SUCCESS) {
-                    result = cursor.delete();
-                }
-                cursor.close();
-                transaction.commit();
+            if (result == OperationStatus.SUCCESS) {
+                result = cursor.delete();
             }
+            cursor.close();
+            transaction.commit();
+//            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -88,18 +89,18 @@ public class FileLinkedQueue extends LinkedBlockingQueue {
     @Override
     public boolean add(Object o) {
 //        synchronized (database) {
-        System.out.println(o);
+//        System.out.println(o);
 //tr
         if (ok) {
             try {
 
-                synchronized (database) {
-                    Transaction transaction = env.beginTransaction(null, null);
-                    DatabaseEntry key = new DatabaseEntry((o + "").getBytes());
-                    DatabaseEntry data = new DatabaseEntry((o + "").getBytes());
-                    database.put(transaction, key, data);
-                    transaction.commit();
-                }
+//                synchronized (database) {
+                Transaction transaction = env.beginTransaction(null, null);
+                DatabaseEntry key = new DatabaseEntry((o + "").getBytes());
+                DatabaseEntry data = new DatabaseEntry((o + "").getBytes());
+                database.put(transaction, key, data);
+                transaction.commit();
+//                }
 
             } catch (Exception e) {
                 e.printStackTrace();

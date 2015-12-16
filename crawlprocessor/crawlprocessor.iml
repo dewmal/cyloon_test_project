@@ -14,60 +14,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="Gradle: org.apache.felix:org.apache.felix.ipojo.annotations:1.12.0">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.felix/org.apache.felix.ipojo.annotations/1.12.0/9d88ce4c571d6cba2191c294af0258339d5b33af/org.apache.felix.ipojo.annotations-1.12.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.felix/org.apache.felix.ipojo.annotations/1.12.0/d155e76b35558045c3a958cf56c346d60318ce31/org.apache.felix.ipojo.annotations-1.12.0-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.osgi:org.osgi.core:4.3.1">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.core/4.3.1/5458ffe2ba049e76c29f2df2dc3ffccddf8b839e/org.osgi.core-4.3.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.core/4.3.1/80bfafcf783988442b3a58318face1d2132db33d/org.osgi.core-4.3.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.osgi:org.osgi.compendium:4.2.0">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.compendium/4.2.0/1e506145ec53132bce79ce8798d98026b598fd48/org.osgi.compendium-4.2.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.compendium/4.2.0/afeafc13c34dd8276b197d0479b438d2324c4bd7/org.osgi.compendium-4.2.0-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: com.sleepycat:je:4.0.92">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/com.sleepycat/je/4.0.92/23430cd4ae2ab7caa00093c345bcaed3fa684ba3/je-4.0.92.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/com.sleepycat/je/4.0.92/886cdb82a252e2d7a2adaa95f29f14b6e8adef8d/je-4.0.92-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.jsoup:jsoup:1.7.1">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.7.1/b0ff13ce3deb12f2731533a5136b9503921befdf/jsoup-1.7.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.7.1/3bae518d66e64f706fa3b7edd3f69781e3c48f8b/jsoup-1.7.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="Gradle: org.apache.felix:org.apache.felix.ipojo.annotations:1.12.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.osgi:org.osgi.core:4.3.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.osgi:org.osgi.compendium:4.2.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jsoup:jsoup:1.7.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.sleepycat:je:4.0.92" level="project" />
   </component>
 </module>

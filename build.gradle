@@ -67,7 +67,7 @@ runOsgi {
 //    outDir = clientConfig ? 'client' : 'server'
     config += [
             'felix.log.level'                         : 4,
-            'org.osgi.framework.system.packages.extra': 'sun.reflect,sun.misc,sun.nio.ch,com.sun.jdmk.comm,com.sun.tools.jconsole,sun.tools.jconsole',
+            'org.osgi.framework.system.packages.extra': 'sun.reflect,sun.misc,sun.nio.ch,com.sun.jdmk.comm,com.sun.tools.jconsole,sun.tools.jconsole,com.sun.javadoc,com.sun.tools.javadoc',
             'core.cyloon.crawler.path'                : '/home/dewmal/projects/production/seed/db/db.cyloon'
     ]
     wrapInstructions {

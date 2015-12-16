@@ -10,7 +10,9 @@ import org.osgi.service.log.LogService;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.*;
+import java.util.regex.Pattern;
 
 /**
  * Created by dewmal on 12/9/15.
@@ -76,9 +78,12 @@ public class Crawler implements ICrawler {
         });
 //            }
 //        });
+        String crawlStorageFolder = "/data/crawl/root";
+        int numberOfCrawlers = 7;
 
 
     }
+
 
 
 }

@@ -42,33 +42,36 @@ public class DBClientService implements IDBClient {
     }
 
     public String save(SiteData siteData) {
-        String id = null;
-//        System.out.println(siteData);
-        System.out.println("Hello DB");
+        String docId = null;
+        System.out.println(siteData);
+//        synchronized (jongo) {
+            String id = null;
+            System.out.println(siteData);
+//        System.out.println("Hello DB");
 
-        MongoCollection sitedata = null;
-        try {
-            sitedata = jongo.getCollection("sitedata");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+            MongoCollection sitedata = null;
+            try {
+                sitedata = jongo.getCollection("sitedata");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
-        SiteData data = sitedata.findOne("{link: '" + siteData.getLink() + "'}").as(SiteData.class);
-        System.out.println(data);
+            SiteData data = sitedata.findOne("{link: '" + siteData.getLink() + "'}").as(SiteData.class);
+            System.out.println(data);
 
 
-        if (data != null) {
-            sitedata.update(new ObjectId(data.get_id())).with(siteData);
-            siteData.set_id(data.get_id());
-        } else {
-            WriteResult save = sitedata.save(siteData);
-            System.out.println(save);
-
-        }
+            if (data != null) {
+                sitedata.update(new ObjectId(data.get_id())).with(siteData);
+                siteData.set_id(data.get_id());
+            } else {
+                WriteResult save = sitedata.save(siteData);
+                System.out.println(save);
+                docId = siteData.get_id();
+            }
+//        }
 
 //        System.out.println(siteData);
 //
-
-        return siteData.get_id();
+        return docId;
     }
 }

@@ -67,7 +67,9 @@ public class CrawlerMT {
         while (!dbHelper.isEmpty()) {
             String nextUrl = null;
             try {
-                nextUrl = dbHelper.take();
+                synchronized (dbHelper) {
+                    nextUrl = dbHelper.take();
+                }
             } catch (Exception ex) {
                 ex.printStackTrace();
             }

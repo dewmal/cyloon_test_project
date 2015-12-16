@@ -9,7 +9,6 @@ RUN apt-get install -y git
 RUN mkdir /cyloon
 RUN mkdir /cyloon_crawler_db
 WORKDIR /cyloon
-ADD . /cyloon1
 RUN git clone https://github.com/dewmal/cyloon_test_project.git
 
 WORKDIR /cyloon/cyloon_test_project
