@@ -41,39 +41,39 @@ public class Mainager5 {
     @Validate
     private void start() {
 
-        try {
-            iCrawler.crawl("ikman", "http://ikman.lk/", new IkmanLkProcessor(iAnalyser), "http://ikman.lk/", "http://ikman.lk/en/ads/ads-in-sri-lanka");
-            iCrawler.crawl("hitad", "http://www.hitad.lk/", new HitAddProcessor(iAnalyser), "http://www.hitad.lk/", "http://www.hitad.lk/EN/property");
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
-
-        }
 //        try {
-//            httpService.registerServlet("/start", new HttpServlet() {
-//                @Override
-//                protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//                    String ok = "";
-//                    try {
-//                        iCrawler.crawl("ikman", "http://ikman.lk/", new IkmanLkProcessor(iAnalyser), "http://ikman.lk/", "http://ikman.lk/en/ads/ads-in-sri-lanka");
-//                        iCrawler.crawl("hitad", "http://www.hitad.lk/", new HitAddProcessor(iAnalyser), "http://www.hitad.lk/", "http://www.hitad.lk/EN/property");
-//                    } catch (InterruptedException e) {
-//                        ok = e.getMessage();
-//                    } catch (Exception e) {
-//                        ok = e.getMessage();
-//                    }
-////                    super.doGet(req, resp);
-//
-//                    resp.getWriter().write("Start Crawler " + ok);
-//                }
-//
-//            }, null, null);
-//        } catch (ServletException e) {
+//            iCrawler.crawl("ikman", "http://ikman.lk/", new IkmanLkProcessor(iAnalyser), "http://ikman.lk/", "http://ikman.lk/en/ads/ads-in-sri-lanka");
+//            iCrawler.crawl("hitad", "http://www.hitad.lk/", new HitAddProcessor(iAnalyser), "http://www.hitad.lk/", "http://www.hitad.lk/EN/property");
+//        } catch (InterruptedException e) {
 //            e.printStackTrace();
-//        } catch (NamespaceException e) {
+//        } catch (Exception e) {
 //            e.printStackTrace();
+//
 //        }
+        try {
+            httpService.registerServlet("/start", new HttpServlet() {
+                @Override
+                protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+                    String ok = "";
+                    try {
+                        iCrawler.crawl("ikman", "http://ikman.lk/", new IkmanLkProcessor(iAnalyser), "http://ikman.lk/", "http://ikman.lk/en/ads/ads-in-sri-lanka");
+                        iCrawler.crawl("hitad", "http://www.hitad.lk/", new HitAddProcessor(iAnalyser), "http://www.hitad.lk/", "http://www.hitad.lk/EN/property");
+                    } catch (InterruptedException e) {
+                        ok = e.getMessage();
+                    } catch (Exception e) {
+                        ok = e.getMessage();
+                    }
+//                    super.doGet(req, resp);
+
+                    resp.getWriter().write("Start Crawler " + ok);
+                }
+
+            }, null, null);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (NamespaceException e) {
+            e.printStackTrace();
+        }
 
 
     }

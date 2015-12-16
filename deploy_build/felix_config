@@ -1,18 +1,8 @@
-
-felix.auto.deploy.action = install,start
-felix.log.level = 4
-org.osgi.service.http.port = 8080
-gosh.args=--nointeractive
-obr.repository.url = http://felix.apache.org/obr/releases.xml
-org.osgi.framework.system.packages.extra = sun.reflect,sun.misc,sun.nio.ch,com.sun.jdmk.comm,com.sun.tools.jconsole,sun.tools.jconsole
-core.cyloon.crawler.path = /home/dewmal/projects/production/seed/db/db.cyloon
-
 obr:repos remove http://felix.apache.org/obr/releases.xml;
 obr:repos add file:/opt/osgi/felix-framework-4.2.1/conf/repository.xml;
 obr:repos refresh;
 obr:deploy 'osgi.cmpn';
 obr:deploy 'osgi.core';
-obr:deploy 'org.apache.geronimo.bundles.json';
 obr:deploy 'Apache Commons FileUpload Bundle';
 obr:deploy 'Apache Commons IO Bundle';
 obr:deploy -s 'Apache Felix Configuration Admin Service';
@@ -26,8 +16,6 @@ obr:deploy -s 'OPS4J Pax Logging - Service';
 obr:deploy -s 'OPS4J Pax Swissbox :: Lifecycle';
 obr:deploy -s 'OPS4J Pax Swissbox :: Optional JCL';
 obr:deploy -s 'OPS4J Pax Swissbox :: OSGi Core';
-obr:deploy -s 'OPS4J Pax Web - Jetty Bundle';
-obr:deploy -s 'OPS4J Pax Web - Extender - Whiteboard';
 obr:deploy -s 'Apache Felix Web Console Event Plugin';
 obr:deploy -s 'Apache Felix Web Console Memory Usage Plugin';
 obr:deploy -s 'Apache Felix Web Console OBR Plugin';

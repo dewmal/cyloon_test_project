@@ -20,6 +20,7 @@ RUN ./gradlew clean createOsgiRuntime --info --stacktrace
 WORKDIR /cyloon/cyloon_test_project/build/osgi
 
 RUN chmod +x run.sh
-RUN ./run.sh
+#RUN ./run.sh
 
 EXPOSE 8080
+CMD ["/cyloon/cyloon_test_project/build/osgi/run.sh"]

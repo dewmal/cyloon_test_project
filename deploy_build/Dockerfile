@@ -16,6 +16,7 @@ VOLUME /var/felix
 
 ADD repository.xml /opt/osgi/felix-framework-4.2.1/conf/repository.xml
 ADD load /opt/osgi/felix-framework-4.2.1/load
+ADD config.properties /opt/osgi/felix-framework-4.2.1/conf/config.properties
 ADD bundle /opt/osgi/felix-framework-4.2.1/bundle
 ADD launch_felix.sh /opt/osgi/felix-framework-4.2.1/launch_felix.sh
 ADD felix_config /opt/osgi/felix-framework-4.2.1/felix_config
