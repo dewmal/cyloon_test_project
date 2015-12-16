@@ -9,7 +9,8 @@ import java.util.concurrent.LinkedBlockingQueue;
  * Created by dewmal on 12/13/15.
  */
 public class FileLinkedQueue extends LinkedBlockingQueue {
-
+    //    "/home/dewmal/cyloon_crawler_db/"
+    private final String BASEPATH = "/cyloon_crawler_db/";
     private Database database;
     private Environment env;
     private String dbName;
@@ -24,7 +25,7 @@ public class FileLinkedQueue extends LinkedBlockingQueue {
             environmentConfig.setTransactional(true);
             environmentConfig.setAllowCreate(true);
 
-            File file = new File("/home/dewmal/cyloon_crawler_db/" + dbName);
+            File file = new File(BASEPATH + dbName);
             if (!file.exists()) {
                 file.mkdir();
             }
@@ -52,7 +53,7 @@ public class FileLinkedQueue extends LinkedBlockingQueue {
             ok = true;
 
             System.out.println(" Begin  DB " + dbName + " - " + size());
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -93,7 +94,7 @@ public class FileLinkedQueue extends LinkedBlockingQueue {
             try {
 
                 synchronized (database) {
-                    Transaction transaction = env.beginTransaction(null,null);
+                    Transaction transaction = env.beginTransaction(null, null);
                     DatabaseEntry key = new DatabaseEntry((o + "").getBytes());
                     DatabaseEntry data = new DatabaseEntry((o + "").getBytes());
                     database.put(transaction, key, data);
