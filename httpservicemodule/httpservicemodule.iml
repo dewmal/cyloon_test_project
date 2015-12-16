@@ -14,212 +14,24 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="Gradle: org.apache.felix:org.apache.felix.ipojo.annotations:1.12.0">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.felix/org.apache.felix.ipojo.annotations/1.12.0/9d88ce4c571d6cba2191c294af0258339d5b33af/org.apache.felix.ipojo.annotations-1.12.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.felix/org.apache.felix.ipojo.annotations/1.12.0/d155e76b35558045c3a958cf56c346d60318ce31/org.apache.felix.ipojo.annotations-1.12.0-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.osgi:org.osgi.core:4.3.1">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.core/4.3.1/5458ffe2ba049e76c29f2df2dc3ffccddf8b839e/org.osgi.core-4.3.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.core/4.3.1/80bfafcf783988442b3a58318face1d2132db33d/org.osgi.core-4.3.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.osgi:org.osgi.compendium:4.2.0">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.compendium/4.2.0/1e506145ec53132bce79ce8798d98026b598fd48/org.osgi.compendium-4.2.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.compendium/4.2.0/afeafc13c34dd8276b197d0479b438d2324c4bd7/org.osgi.compendium-4.2.0-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.glassfish.grizzly:grizzly-http-ajp:2.3.23">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http-ajp/2.3.23/cdc3d035710ed3d679bd4d39782e7948c0c7ef83/grizzly-http-ajp-2.3.23.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http-ajp/2.3.23/5110fd9239300db6df44f57d0fff2a98465854bf/grizzly-http-ajp-2.3.23-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.glassfish.grizzly:grizzly-npn-osgi:1.2">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-npn-osgi/1.2/f9ac0b0613fb6b2bcfd197b1a3d4e410cab21006/grizzly-npn-osgi-1.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.glassfish.grizzly:grizzly-spdy:2.3.23">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-spdy/2.3.23/52c4025eacedada370baefd50bb03b0f90ebffe4/grizzly-spdy-2.3.23.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-spdy/2.3.23/808d96986a1f6e75a4bb43b91741960b35198a65/grizzly-spdy-2.3.23-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.glassfish.grizzly:grizzly-http-all:2.3.23">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http-all/2.3.23/7cd4ed274fc81dbc61a446119c00fe6ec6e1dc98/grizzly-http-all-2.3.23.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http-all/2.3.23/bf154bc86c34284554915971ae4849c2d6814563/grizzly-http-all-2.3.23-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.glassfish.grizzly:grizzly-npn-api:1.1">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-npn-api/1.1/878cefd45e7053f4c06c2897b78555376a3e13c2/grizzly-npn-api-1.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-npn-api/1.1/c20a5954ddf0af5a8d028dfe45daa917f20d9f64/grizzly-npn-api-1.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.glassfish.grizzly:grizzly-http-server-core:2.3.23">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http-server-core/2.3.23/7fc32545d365157ba63a45a0134ffaa4b186bf62/grizzly-http-server-core-2.3.23.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http-server-core/2.3.23/dcbb0126822987c0f15c4325d056c4ec03a6a296/grizzly-http-server-core-2.3.23-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.glassfish.grizzly:grizzly-http-server-multipart:2.3.23">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http-server-multipart/2.3.23/a4921f98c3133c42f238bc03db5fb9e9123c1002/grizzly-http-server-multipart-2.3.23.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http-server-multipart/2.3.23/59b1744aacf582ddb3ee12eebd12556d0a7c0756/grizzly-http-server-multipart-2.3.23-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.glassfish.grizzly:grizzly-framework:2.3.23">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-framework/2.3.23/262913b1a7ec4156e7e6aa3f8854a4d1a54940b0/grizzly-framework-2.3.23.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-framework/2.3.23/90a0a56cd0e4745925084193c3945029a576a2d7/grizzly-framework-2.3.23-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.glassfish.grizzly:grizzly-http-servlet:2.3.23">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http-servlet/2.3.23/3ccf3bd686e7eed7927b2bcf56ab2322216bf1b2/grizzly-http-servlet-2.3.23.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http-servlet/2.3.23/aa622120965e9f4d6dd13615c74aa2fe3c042f1b/grizzly-http-servlet-2.3.23-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.glassfish.grizzly:grizzly-comet:2.3.23">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-comet/2.3.23/6d7abec0c9e7937dd2ec1acf6ff412414e7c3bc2/grizzly-comet-2.3.23.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-comet/2.3.23/fb4ed9ebbd66f322e5afc08379e1649bc99dfe39/grizzly-comet-2.3.23-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.glassfish.grizzly:grizzly-websockets:2.3.23">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-websockets/2.3.23/ea922715d8e63bbcee2472dd6ec4db794e05973a/grizzly-websockets-2.3.23.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-websockets/2.3.23/c91af101949dd9740977fd00cee068942eeb2750/grizzly-websockets-2.3.23-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: javax.servlet:javax.servlet-api:3.1.0">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/ab3976d4574c48d22dc1abf6a9e8bd0fdf928223/javax.servlet-api-3.1.0-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.glassfish.grizzly:grizzly-core:2.3.23">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-core/2.3.23/462f28db1821c4779467ad64abde28b66f73da5b/grizzly-core-2.3.23.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-core/2.3.23/5b8b905b8f1fab06255f4b81ccd03856868a3eb7/grizzly-core-2.3.23-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.glassfish.grizzly:grizzly-http-server:2.3.23">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http-server/2.3.23/4aaf209163d8dca1bfb1907f19c7fd1f2f3ebbf9/grizzly-http-server-2.3.23.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http-server/2.3.23/478593d7f8fe37597d740b61d83ab729c051ac1f/grizzly-http-server-2.3.23-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.glassfish.grizzly:grizzly-http:2.3.23">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http/2.3.23/287ea2c8a765b14fbc494749570ff3889ecd7b83/grizzly-http-2.3.23.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http/2.3.23/e725d1c194054d7c40957bd6e3a89ef87b783a0f/grizzly-http-2.3.23-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.glassfish.grizzly:grizzly-portunif:2.3.23">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-portunif/2.3.23/fc2ec181e71fc188519077d22472528d2af7d626/grizzly-portunif-2.3.23.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-portunif/2.3.23/b6950501ac35d38d618d21542297abbdbd791ddc/grizzly-portunif-2.3.23-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="Gradle: org.apache.felix:org.apache.felix.ipojo.annotations:1.12.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.osgi:org.osgi.core:4.3.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.osgi:org.osgi.compendium:4.2.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-http-ajp:2.3.23" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-npn-osgi:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-spdy:2.3.23" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-http-all:2.3.23" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-npn-api:1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-http-server-core:2.3.23" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-http-server-multipart:2.3.23" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-framework:2.3.23" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-http-servlet:2.3.23" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-comet:2.3.23" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-websockets:2.3.23" level="project" />
+    <orderEntry type="library" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-core:2.3.23" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-http-server:2.3.23" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-http:2.3.23" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.grizzly:grizzly-portunif:2.3.23" level="project" />
   </component>
 </module>

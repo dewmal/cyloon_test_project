@@ -14,7 +14,7 @@ public class DBHelper {
     public DBHelper(String dbName) {
         this.dbName = dbName;
 
-        linksQueue = new FileLinkedQueue(dbName);
+        linksQueue = new LinkedBlockingQueue<String>();
 
     }
 

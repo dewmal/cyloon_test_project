@@ -14,179 +14,21 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="Gradle: org.apache.felix:org.apache.felix.ipojo.annotations:1.12.0">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.felix/org.apache.felix.ipojo.annotations/1.12.0/9d88ce4c571d6cba2191c294af0258339d5b33af/org.apache.felix.ipojo.annotations-1.12.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.felix/org.apache.felix.ipojo.annotations/1.12.0/d155e76b35558045c3a958cf56c346d60318ce31/org.apache.felix.ipojo.annotations-1.12.0-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.osgi:org.osgi.core:4.3.1">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.core/4.3.1/5458ffe2ba049e76c29f2df2dc3ffccddf8b839e/org.osgi.core-4.3.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.core/4.3.1/80bfafcf783988442b3a58318face1d2132db33d/org.osgi.core-4.3.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.osgi:org.osgi.compendium:4.2.0">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.compendium/4.2.0/1e506145ec53132bce79ce8798d98026b598fd48/org.osgi.compendium-4.2.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.compendium/4.2.0/afeafc13c34dd8276b197d0479b438d2324c4bd7/org.osgi.compendium-4.2.0-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.apache.servicemix.bundles:org.apache.servicemix.bundles.solr-solrj:5.3.1_1">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.apache.servicemix.bundles/org.apache.servicemix.bundles.solr-solrj/5.3.1_1/5fa0baca2624afd836b0fd2653f778898c463290/org.apache.servicemix.bundles.solr-solrj-5.3.1_1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.apache.servicemix.bundles/org.apache.servicemix.bundles.solr-solrj/5.3.1_1/f408c4ce15a4a1f2f6c8e812bb23130caefc4185/org.apache.servicemix.bundles.solr-solrj-5.3.1_1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.apache.servicemix.bundles:org.apache.servicemix.bundles.commons-io:1.4_3">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.apache.servicemix.bundles/org.apache.servicemix.bundles.commons-io/1.4_3/c920be12c47f135889fa488929cac20c54d1a768/org.apache.servicemix.bundles.commons-io-1.4_3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.apache.servicemix.bundles/org.apache.servicemix.bundles.commons-io/1.4_3/37db2e96bb1e26d9cd242fdfa36c0a7e62e7008f/org.apache.servicemix.bundles.commons-io-1.4_3-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.apache.httpcomponents:httpclient:4.5.1">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.1/7e3cecc566df91338c6c67883b89ddd05a17db43/httpclient-4.5.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.1/c0ecd55724129bbd48850314b4ff8a360d670662/httpclient-4.5.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.apache.solr:solr-noggit:3.5.0">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.apache.solr/solr-noggit/3.5.0/a732aee4fe2dec0c409bc86e3a83f268080d3a7d/solr-noggit-3.5.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.noggit:noggit:0.5">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.noggit/noggit/0.5/8e6e65624d2e09a30190c6434abe23b7d4e5413c/noggit-0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.noggit/noggit/0.5/24354bb3b00ff1acb7df7947deac604503d22c1c/noggit-0.5-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.osgi:org.osgi.service.http:1.2.1">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.service.http/1.2.1/c442ac684af14dd293466eae82d5f80d5408e898/org.osgi.service.http-1.2.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.service.http/1.2.1/f748b1a4162e49d86ca60c2a05e33d9d5b38c35d/org.osgi.service.http-1.2.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.apache.httpcomponents:httpmime:4.5.1">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.5.1/96823b9421ebb9f490dec837d9f96134e864e3a7/httpmime-4.5.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.5.1/2aab83661676c842d50995fe934550e3e23b3c6/httpmime-4.5.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.codehaus.woodstox:stax2-api:3.1.4">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/stax2-api/3.1.4/ac19014b1e6a7c08aad07fe114af792676b685b7/stax2-api-3.1.4.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/stax2-api/3.1.4/b40604d61c01cc081a4a7bdfc562aa9847ee8857/stax2-api-3.1.4-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.codehaus.woodstox:woodstox-core-asl:4.4.1">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/woodstox-core-asl/4.4.1/84fee5eb1a4a1cefe65b6883c73b3fa83be3c1a1/woodstox-core-asl-4.4.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/woodstox-core-asl/4.4.1/ffa1c21ea3509859bb54d62e3b8254a3263c7fb9/woodstox-core-asl-4.4.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.slf4j:slf4j-api:1.7.7">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.7/2b8019b6249bb05d81d3a3094e468753e2b21311/slf4j-api-1.7.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.7/acd62e31cc314266e73eebed0b6dd7ea974a0ed/slf4j-api-1.7.7-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: commons-logging:commons-logging:1.2">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/ecf26c7507d67782a3bbd148d170b31dfad001aa/commons-logging-1.2-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: commons-codec:commons-codec:1.9">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/9ce04e34240f674bc72680f8b843b1457383161a/commons-codec-1.9.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/3f15fff45d57656685abfee9e8302bf14580044c/commons-codec-1.9-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Gradle: org.apache.httpcomponents:httpcore:4.4.3">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.3/e876a79d561e5c6207b78d347e198c8c4531a5e5/httpcore-4.4.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/applications/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.3/b972b5dfd2db7d41d76a6fc5445852522a136e2e/httpcore-4.4.3-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="Gradle: org.apache.felix:org.apache.felix.ipojo.annotations:1.12.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.osgi:org.osgi.core:4.3.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.osgi:org.osgi.compendium:4.2.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.servicemix.bundles:org.apache.servicemix.bundles.solr-solrj:5.3.1_1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.servicemix.bundles:org.apache.servicemix.bundles.commons-io:1.4_3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.5.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.solr:solr-noggit:3.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.noggit:noggit:0.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.osgi:org.osgi.service.http:1.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpmime:4.5.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.woodstox:stax2-api:3.1.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.woodstox:woodstox-core-asl:4.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.7" level="project" />
+    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.9" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.4.3" level="project" />
   </component>
 </module>

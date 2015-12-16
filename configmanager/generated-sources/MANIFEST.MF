@@ -3,8 +3,8 @@ Export-Package: io.egreen.seed.config;uses:="org.osgi.framework"
 Bundle-Version: 0.0.0.unspecified
 Tool: Bnd-2.1.0.20130426-122213
 Bundle-Name: configmanager
-Bnd-LastModified: 1450179478000
-Created-By: 1.7.0_85 (Oracle Corporation)
+Bnd-LastModified: 1450259043000
+Created-By: 1.7.0_21 (Oracle Corporation)
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: platform.configmanager
 Import-Package: org.osgi.framework;version="[1.6,2)"
