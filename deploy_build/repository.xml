@@ -1,0 +1,1385 @@
+<repository lastmodified='20140912080039.184'>
+  <resource id='org.apache.commons.fileupload/1.2.1' symbolicname='org.apache.commons.fileupload' presentationname='Apache Commons FileUpload Bundle' uri='http://repo1.maven.org/maven2/commons-fileupload/commons-fileupload/1.2.1/commons-fileupload-1.2.1.jar' version='1.2.1'>
+    <size>57779</size>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.apache.commons.fileupload'/>
+      <p n='presentationname' v='Apache Commons FileUpload Bundle'/>
+      <p n='version' t='version' v='1.2.1'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.fileupload'/>
+      <p n='version' t='version' v='1.2.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.fileupload.disk'/>
+      <p n='version' t='version' v='1.2.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.fileupload.portlet'/>
+      <p n='version' t='version' v='1.2.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.fileupload.servlet'/>
+      <p n='version' t='version' v='1.2.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.fileupload.util'/>
+      <p n='version' t='version' v='1.2.1'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=org.apache.commons.fileupload)(version&gt;=1.2.1))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.fileupload;version=1.2.1</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.fileupload.disk)(version&gt;=1.2.1))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.fileupload.disk;version=1.2.1</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.fileupload.portlet)(version&gt;=1.2.1))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.fileupload.portlet;version=1.2.1</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.fileupload.servlet)(version&gt;=1.2.1))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.fileupload.servlet;version=1.2.1</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.fileupload.util)(version&gt;=1.2.1))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.fileupload.util;version=1.2.1</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.io))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.io</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.io.output))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.io.output</require>
+    <require name='package' filter='(&amp;(package=javax.servlet))' extend='false' multiple='false' optional='false'>Import package javax.servlet</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.http))' extend='false' multiple='false' optional='false'>Import package javax.servlet.http</require>
+  </resource>
+  <resource id='org.apache.commons.io/1.4.0' symbolicname='org.apache.commons.io' presentationname='Apache Commons IO Bundle' uri='http://repo1.maven.org/maven2/commons-io/commons-io/1.4/commons-io-1.4.jar' version='1.4.0'>
+    <size>109043</size>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.apache.commons.io'/>
+      <p n='presentationname' v='Apache Commons IO Bundle'/>
+      <p n='version' t='version' v='1.4.0'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.io'/>
+      <p n='version' t='version' v='1.4.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.io.comparator'/>
+      <p n='version' t='version' v='1.4.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.io.filefilter'/>
+      <p n='version' t='version' v='1.4.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.io.input'/>
+      <p n='version' t='version' v='1.4.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.io.output'/>
+      <p n='version' t='version' v='1.4.0'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=org.apache.commons.io)(version&gt;=1.4.0))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.io;version=1.4</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.io.comparator)(version&gt;=1.4.0))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.io.comparator;version=1.4</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.io.filefilter)(version&gt;=1.4.0))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.io.filefilter;version=1.4</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.io.input)(version&gt;=1.4.0))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.io.input;version=1.4</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.io.output)(version&gt;=1.4.0))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.io.output;version=1.4</require>
+  </resource>
+  <resource id='org.apache.felix.configadmin/1.4.0' symbolicname='org.apache.felix.configadmin' presentationname='Apache Felix Configuration Admin Service' uri='http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.configadmin/1.4.0/org.apache.felix.configadmin-1.4.0.jar' version='1.4.0'>
+    <description>Implementation of the OSGi Configuration Admin Service Specification 1.4</description>
+    <size>109181</size>
+    <documentation>http://felix.apache.org/site/apache-felix-config-admin.html</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
+    <category id='osgi'/>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.apache.felix.configadmin'/>
+      <p n='presentationname' v='Apache Felix Configuration Admin Service'/>
+      <p n='version' t='version' v='1.4.0'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='service'>
+      <p n='service' v='org.osgi.service.cm.ConfigurationAdmin'/>
+      <p n='service.description' v='Configuration Admin Service Specification 1.4 Implementation'/>
+      <p n='service.pid' v='org.osgi.service.cm.ConfigurationAdmin'/>
+      <p n='service.vendor' v='Apache Software Foundation'/>
+    </capability>
+    <capability name='service'>
+      <p n='service' v='org.apache.felix.cm.PersistenceManager'/>
+      <p n='service.description' v='Platform Filesystem Persistence Manager'/>
+      <p n='service.pid' v='org.apache.felix.cm.file.FilePersistenceManager'/>
+      <p n='service.vendor' v='Apache Software Foundation'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.cm'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.cm.file'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='uses:' v='org.apache.felix.cm,org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.cm'/>
+      <p n='version' t='version' v='1.4.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <require name='service' filter='(service=org.osgi.service.log.LogService)' extend='false' multiple='false' optional='true'>Import Service org.osgi.service.log.LogService</require>
+    <require name='package' filter='(&amp;(package=org.apache.felix.cm)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.felix.cm;version="[1.0,1.1)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.felix.cm.file)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.felix.cm.file;version="[1.0,1.1)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework;version="[1.4,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.cm)(version&gt;=1.4.0)(!(version&gt;=1.5.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.cm;version="[1.4,1.5)"</require>
+  </resource>
+  <resource id='org.apache.felix.dependencymanager/3.1.0' symbolicname='org.apache.felix.dependencymanager' presentationname='Apache Felix Dependency Manager' uri='http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.dependencymanager/3.1.0/org.apache.felix.dependencymanager-3.1.0.jar' version='3.1.0'>
+    <description>Provides dynamic service and component dependency management.</description>
+    <size>174283</size>
+    <documentation>http://www.apache.org/</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.apache.felix.dependencymanager'/>
+      <p n='presentationname' v='Apache Felix Dependency Manager'/>
+      <p n='version' t='version' v='3.1.0'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.dm'/>
+      <p n='version' t='version' v='3.0.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.dm.tracker'/>
+      <p n='version' t='version' v='3.1.0'/>
+      <p n='uses:' v='org.osgi.framework,org.apache.felix.dm'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=org.apache.felix.dm.tracker)(version&gt;=3.1.0)(!(version&gt;=3.2.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.felix.dm.tracker;version="[3.1,3.2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework;version="[1.5,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.cm)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.cm;version="[1.3,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.metatype)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.metatype;version="[1.1,2)"</require>
+  </resource>
+  <resource id='org.apache.felix.deploymentadmin/0.9.6' symbolicname='org.apache.felix.deploymentadmin' presentationname='Apache Felix Deployment Admin' uri='http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.deploymentadmin/0.9.6/org.apache.felix.deploymentadmin-0.9.6.jar' version='0.9.6'>
+    <description>A bundle that implements the Deployment Admin.</description>
+    <size>100502</size>
+    <documentation>http://www.apache.org/</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.apache.felix.deploymentadmin'/>
+      <p n='presentationname' v='Apache Felix Deployment Admin'/>
+      <p n='version' t='version' v='0.9.6'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.deploymentadmin'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.deploymentadmin.spi'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='uses:' v='org.osgi.framework,org.osgi.service.deploymentadmin'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=org.apache.felix.dm)(version&gt;=3.0.0)(!(version&gt;=4.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.felix.dm;version="[3.0,4)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework;version="[1.5,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.deploymentadmin)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.deploymentadmin;version="[1,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.deploymentadmin.spi)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.deploymentadmin.spi;version="[1,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.event)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.event;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.log;version="[1.3,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.packageadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.packageadmin;version="[1.2,2)"</require>
+  </resource>
+  <resource id='org.apache.felix.fileinstall/3.2.8' symbolicname='org.apache.felix.fileinstall' presentationname='Apache Felix File Install' uri='http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.fileinstall/3.2.8/org.apache.felix.fileinstall-3.2.8.jar' version='3.2.8'>
+    <description>A utility to automatically install bundles from a directory.</description>
+    <size>92896</size>
+    <documentation>http://felix.apache.org/site/apache-felix-file-install.html</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.apache.felix.fileinstall'/>
+      <p n='presentationname' v='Apache Felix File Install'/>
+      <p n='version' t='version' v='3.2.8'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.fileinstall'/>
+      <p n='version' t='version' v='3.2.8'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework;version="[1.4,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.cm)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='true'>Import package org.osgi.service.cm;resolution:=optional;version="[1.3,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='true'>Import package org.osgi.service.log;resolution:=optional;version="[1.3,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.packageadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.packageadmin;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.startlevel)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.startlevel;version="[1.1,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.url)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.url;version="[1.0,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.util.tracker)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.util.tracker;version="[1.4,2)"</require>
+  </resource>
+  <resource id='org.apache.felix.metatype/1.0.4' symbolicname='org.apache.felix.metatype' presentationname='Apache Felix Metatype Service' uri='http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.metatype/1.0.4/org.apache.felix.metatype-1.0.4.jar' version='1.0.4'>
+    <description>Implementation of the OSGi Metatype Service Specification 1.1</description>
+    <size>93990</size>
+    <documentation>http://felix.apache.org/site/apache-felix-metatype-service.html</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
+    <category id='osgi'/>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.apache.felix.metatype'/>
+      <p n='presentationname' v='Apache Felix Metatype Service'/>
+      <p n='version' t='version' v='1.0.4'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.metatype'/>
+      <p n='version' t='version' v='1.0.4'/>
+      <p n='uses:' v='org.osgi.service.metatype,org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.metatype'/>
+      <p n='version' t='version' v='1.1.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=org.apache.felix.metatype)(version&gt;=1.0.0))' extend='false' multiple='false' optional='false'>Import package org.apache.felix.metatype;version=1.0</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.3.0))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework;version=1.3</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.log;version=1.3</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.metatype)(version&gt;=1.1.0))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.metatype;version=1.1</require>
+  </resource>
+  <resource id='org.apache.felix.webconsole.plugins.event/1.0.2' symbolicname='org.apache.felix.webconsole.plugins.event' presentationname='Apache Felix Web Console Event Plugin' uri='http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.webconsole.plugins.event/1.0.2/org.apache.felix.webconsole.plugins.event-1.0.2.jar' version='1.0.2'>
+    <description>This is a plugin for the Apache Felix OSGi web console for displaying        OSGi events.</description>
+    <size>42130</size>
+    <documentation>http://www.apache.org/</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.apache.felix.webconsole.plugins.event'/>
+      <p n='presentationname' v='Apache Felix Web Console Event Plugin'/>
+      <p n='version' t='version' v='1.0.2'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.servlet))' extend='false' multiple='false' optional='false'>Import package javax.servlet</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.http))' extend='false' multiple='false' optional='false'>Import package javax.servlet.http</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.3.0))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework;version=1.3</require>
+  </resource>
+  <resource id='org.apache.felix.org.apache.felix.webconsole.plugins.memoryusage/1.0.0' symbolicname='org.apache.felix.org.apache.felix.webconsole.plugins.memoryusage' presentationname='Apache Felix Web Console Memory Usage Plugin' uri='http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.webconsole.plugins.memoryusage/1.0.0/org.apache.felix.webconsole.plugins.memoryusage-1.0.0.jar' version='1.0.0'>
+    <description>Plugin providing plugins to the Felix Shell and Web Console to        observe the VMs memory use and cause try to get thread dumps etc.</description>
+    <size>41423</size>
+    <documentation>http://www.apache.org/</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.apache.felix.org.apache.felix.webconsole.plugins.memoryusage'/>
+      <p n='presentationname' v='Apache Felix Web Console Memory Usage Plugin'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.management))' extend='false' multiple='false' optional='false'>Import package javax.management</require>
+    <require name='package' filter='(&amp;(package=javax.servlet))' extend='false' multiple='false' optional='true'>Import package javax.servlet;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.http))' extend='false' multiple='false' optional='true'>Import package javax.servlet.http;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.apache.felix.shell)(version&gt;=1.0.0))' extend='false' multiple='false' optional='true'>Import package org.apache.felix.shell;resolution:=optional;version=1.0</require>
+    <require name='package' filter='(&amp;(package=org.apache.felix.webconsole)(version&gt;=3.0.0))' extend='false' multiple='false' optional='true'>Import package org.apache.felix.webconsole;resolution:=optional;version=3.0</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.3.0))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework;version=1.3</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.cm)(version&gt;=1.2.0))' extend='false' multiple='false' optional='true'>Import package org.osgi.service.cm;resolution:=optional;version=1.2</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.metatype)(version&gt;=1.1.0))' extend='false' multiple='false' optional='true'>Import package org.osgi.service.metatype;resolution:=optional;version=1.1</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.5.0))' extend='false' multiple='false' optional='false'>Import package org.slf4j;version=1.5</require>
+  </resource>
+  <resource id='org.apache.felix.webconsole.plugins.obr/1.0.0' symbolicname='org.apache.felix.webconsole.plugins.obr' presentationname='Apache Felix Web Console OBR Plugin' uri='http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.webconsole.plugins.obr/1.0.0/org.apache.felix.webconsole.plugins.obr-1.0.0.jar' version='1.0.0'>
+    <description>This Apache Felix OSGi web console plugin provides method to install bundles from a bundle repository.</description>
+    <size>40850</size>
+    <documentation>http://www.apache.org/</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.apache.felix.webconsole.plugins.obr'/>
+      <p n='presentationname' v='Apache Felix Web Console OBR Plugin'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.servlet))' extend='false' multiple='false' optional='false'>Import package javax.servlet</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.http))' extend='false' multiple='false' optional='false'>Import package javax.servlet.http</require>
+    <require name='package' filter='(&amp;(package=org.apache.felix.webconsole)(version&gt;=3.0.0))' extend='false' multiple='false' optional='false'>Import package org.apache.felix.webconsole;version=3.0</require>
+    <require name='package' filter='(&amp;(package=org.json))' extend='false' multiple='false' optional='false'>Import package org.json</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.3.0))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework;version=1.3</require>
+    <require name='package' filter='(&amp;(package=org.osgi.util.tracker)(version&gt;=1.3.0))' extend='false' multiple='false' optional='false'>Import package org.osgi.util.tracker;version=1.3</require>
+  </resource>
+  <resource id='org.apache.felix.webconsole.plugins.packageadmin/1.0.0' symbolicname='org.apache.felix.webconsole.plugins.packageadmin' presentationname='Apache Felix Web Console Package Admin Service Plugin' uri='http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.webconsole.plugins.packageadmin/1.0.0/org.apache.felix.webconsole.plugins.packageadmin-1.0.0.jar' version='1.0.0'>
+    <description>Plugin providing support to query the Package Admin service        for various details; e.g. finding duplicate package exports        or finding bundles exporting given packages</description>
+    <size>26195</size>
+    <documentation>http://www.apache.org/</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.apache.felix.webconsole.plugins.packageadmin'/>
+      <p n='presentationname' v='Apache Felix Web Console Package Admin Service Plugin'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.servlet))' extend='false' multiple='false' optional='false'>Import package javax.servlet</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.http))' extend='false' multiple='false' optional='false'>Import package javax.servlet.http</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.io)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.io;version="[1.4,2)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.felix.webconsole)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.felix.webconsole;version="[3.1,4)"</require>
+    <require name='package' filter='(&amp;(package=org.json))' extend='false' multiple='false' optional='false'>Import package org.json</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework;version="[1.3,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.packageadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.packageadmin;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.util.tracker)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.util.tracker;version="[1.3,2)"</require>
+  </resource>
+  <resource id='org.apache.felix.webconsole/4.0.0' symbolicname='org.apache.felix.webconsole' presentationname='Apache Felix Web Management Console' uri='http://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.webconsole/4.0.0/org.apache.felix.webconsole-4.0.0.jar' version='4.0.0'>
+    <description>Web Based Management Console for OSGi Frameworks. See        http://felix.apache.org/site/apache-felix-web-console.html for more        information on this bundle.</description>
+    <size>433949</size>
+    <documentation>http://felix.apache.org/site/apache-felix-web-console.html</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.apache.felix.webconsole'/>
+      <p n='presentationname' v='Apache Felix Web Management Console'/>
+      <p n='version' t='version' v='4.0.0'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.webconsole'/>
+      <p n='version' t='version' v='3.1.2'/>
+      <p n='uses:' v='javax.servlet,org.osgi.framework,org.apache.commons.io,javax.servlet.http,org.osgi.util.tracker,org.apache.commons.fileupload.disk,org.apache.commons.fileupload,org.apache.commons.fileupload.servlet,org.json'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.servlet)(version&gt;=2.4.0))' extend='false' multiple='false' optional='false'>Import package javax.servlet;version=2.4</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.http)(version&gt;=2.4.0))' extend='false' multiple='false' optional='false'>Import package javax.servlet.http;version=2.4</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.fileupload)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.fileupload;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.fileupload.disk)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.fileupload.disk;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.fileupload.servlet)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.fileupload.servlet;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.io)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.io;version="[1.4,2)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.felix.webconsole)(version&gt;=3.1.0)(!(version&gt;=3.2.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.felix.webconsole;version="[3.1,3.2)"</require>
+    <require name='package' filter='(&amp;(package=org.json))' extend='false' multiple='false' optional='false'>Import package org.json</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework;version="[1.4,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.http)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.http;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.metatype)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='true'>Import package org.osgi.service.metatype;resolution:=optional;version="[1.1,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.packageadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.packageadmin;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.startlevel)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.startlevel;version="[1.1,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.util.tracker)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.util.tracker;version="[1.3,2)"</require>
+  </resource>
+  <resource id='org.apache.geronimo.bundles.json/20090211.0.0.1' symbolicname='org.apache.geronimo.bundles.json' presentationname='Apache Geronimo Bundles: json-20090211' uri='http://repo1.maven.org/maven2/org/apache/geronimo/bundles/json/20090211_1/json-20090211_1.jar' version='20090211.0.0.1'>
+    <description>This bundle simply wraps json-20090211.jar.</description>
+    <size>53819</size>
+    <documentation>http://geronimo.apache.org/maven/bundles/20090211_1/json</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.apache.geronimo.bundles.json'/>
+      <p n='presentationname' v='Apache Geronimo Bundles: json-20090211'/>
+      <p n='version' t='version' v='20090211.0.0.1'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.json'/>
+      <p n='version' t='version' v='20090211.0.0'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=org.json)(version&gt;=20090211.0.0))' extend='false' multiple='false' optional='false'>Import package org.json;version=20090211.0</require>
+  </resource>
+  <resource id='org.ops4j.base.lang/1.3.0' symbolicname='org.ops4j.base.lang' presentationname='OPS4J Base - Lang' uri='http://repo1.maven.org/maven2/org/ops4j/base/ops4j-base-lang/1.3.0/ops4j-base-lang-1.3.0.jar' version='1.3.0'>
+    <description>OPS4J Base - Utilities/Extensions related to java.lang.</description>
+    <size>6528</size>
+    <documentation>http://www.ops4j.org/</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.html</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.ops4j.base.lang'/>
+      <p n='presentationname' v='OPS4J Base - Lang'/>
+      <p n='version' t='version' v='1.3.0'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.ops4j.lang'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+  </resource>
+  <resource id='org.ops4j.pax.configmanager/0.2.3' symbolicname='org.ops4j.pax.configmanager' presentationname='OPS4J Pax ConfMan - Properties Loader' uri='http://repo1.maven.org/maven2/org/ops4j/pax/confman/pax-confman-propsloader/0.2.3/pax-confman-propsloader-0.2.3.jar' version='0.2.3'>
+    <description>Pax Configuration Manger Service provides a framework to read files (default property files handling is supplied)    from a directory and use ConfigurationAdmin to update the service with the properties loaded.</description>
+    <size>30067</size>
+    <documentation>http://www.ops4j.org/</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.html</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.ops4j.pax.configmanager'/>
+      <p n='presentationname' v='OPS4J Pax ConfMan - Properties Loader'/>
+      <p n='version' t='version' v='0.2.3'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.ops4j.pax.configmanager'/>
+      <p n='version' t='version' v='0.2.3'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=org.apache.commons.logging)(version&gt;=1.0.4))' extend='false' multiple='false' optional='true'>Import package org.apache.commons.logging;resolution:=optional;version=1.0.4</require>
+    <require name='package' filter='(&amp;(package=org.ops4j.pax.configmanager)(version&gt;=0.2.3))' extend='false' multiple='false' optional='false'>Import package org.ops4j.pax.configmanager;version=0.2.3</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework;version="[1.0.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.cm)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.cm;version="[1.0.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.util.tracker)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.util.tracker;version="[1.0.0,2.0.0)"</require>
+  </resource>
+  <resource id='org.ops4j.pax.logging.pax-logging-api/1.4.0' symbolicname='org.ops4j.pax.logging.pax-logging-api' presentationname='OPS4J Pax Logging - API' uri='http://repo1.maven.org/maven2/org/ops4j/pax/logging/pax-logging-api/1.4/pax-logging-api-1.4.jar' version='1.4.0'>
+    <description>The Pax Logging API Library is to allow for the Pax Logging Service to be reloaded without stopping the many    dependent bundles. It also contains the OSGi Log Service API and the Knopflerfish Log API.</description>
+    <size>88414</size>
+    <documentation>http://www.ops4j.org/projects/pax/logging/pax-logging-api</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.html</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.ops4j.pax.logging.pax-logging-api'/>
+      <p n='presentationname' v='OPS4J Pax Logging - API'/>
+      <p n='version' t='version' v='1.4.0'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.juli.logging'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='provider' v='paxlogging'/>
+      <p n='uses:' v='org.ops4j.pax.logging,org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.knopflerfish.service.log'/>
+      <p n='version' t='version' v='1.1.0'/>
+      <p n='provider' v='paxlogging'/>
+      <p n='uses:' v='org.osgi.service.log,org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.slf4j.spi'/>
+      <p n='version' t='version' v='1.5.6'/>
+      <p n='provider' v='paxlogging'/>
+      <p n='uses:' v='org.slf4j'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.log4j.spi'/>
+      <p n='version' t='version' v='1.2.15'/>
+      <p n='provider' v='paxlogging'/>
+      <p n='uses:' v='org.apache.log4j'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.avalon.framework.logger'/>
+      <p n='version' t='version' v='4.3.0'/>
+      <p n='provider' v='paxlogging'/>
+      <p n='uses:' v='org.apache.log'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.log4j.xml'/>
+      <p n='version' t='version' v='1.2.15'/>
+      <p n='provider' v='paxlogging'/>
+      <p n='uses:' v='javax.xml.parsers,org.w3c.dom'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.logging'/>
+      <p n='version' t='version' v='1.1.1'/>
+      <p n='provider' v='paxlogging'/>
+      <p n='uses:' v='org.ops4j.pax.logging,org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.ops4j.pax.logging'/>
+      <p n='version' t='version' v='1.4.0'/>
+      <p n='provider' v='paxlogging'/>
+      <p n='uses:' v='org.knopflerfish.service.log,org.osgi.framework,org.osgi.util.tracker'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.logging.impl'/>
+      <p n='version' t='version' v='1.1.1'/>
+      <p n='provider' v='paxlogging'/>
+      <p n='uses:' v='org.apache.commons.logging'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.log4j'/>
+      <p n='version' t='version' v='1.2.15'/>
+      <p n='provider' v='paxlogging'/>
+      <p n='uses:' v='org.ops4j.pax.logging,org.apache.log4j.spi,org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.log'/>
+      <p n='version' t='version' v='1.3.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.slf4j'/>
+      <p n='version' t='version' v='1.5.6'/>
+      <p n='provider' v='paxlogging'/>
+      <p n='uses:' v='org.slf4j.spi,org.slf4j.helpers'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.slf4j.helpers'/>
+      <p n='version' t='version' v='1.5.6'/>
+      <p n='provider' v='paxlogging'/>
+      <p n='uses:' v='org.slf4j.spi,org.slf4j'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.ops4j.pax.logging.avalon'/>
+      <p n='version' t='version' v='1.4.0'/>
+      <p n='provider' v='paxlogging'/>
+      <p n='uses:' v='org.ops4j.pax.logging,org.apache.avalon.framework.logger,org.osgi.framework'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.xml.parsers))' extend='false' multiple='false' optional='false'>Import package javax.xml.parsers</require>
+    <require name='package' filter='(&amp;(package=org.apache.avalon.framework.logger)(version&gt;=4.3.0)(provider=paxlogging)(mandatory:&lt;*provider))' extend='false' multiple='false' optional='false'>Import package org.apache.avalon.framework.logger;provider=paxlogging;version=4.3</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.logging)(version&gt;=1.1.1)(provider=paxlogging)(mandatory:&lt;*provider))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.logging;provider=paxlogging;version=1.1.1</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.logging.impl)(version&gt;=1.1.1)(provider=paxlogging)(mandatory:&lt;*provider))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.logging.impl;provider=paxlogging;version=1.1.1</require>
+    <require name='package' filter='(&amp;(package=org.apache.juli.logging)(version&gt;=1.0.0)(provider=paxlogging)(mandatory:&lt;*provider))' extend='false' multiple='false' optional='false'>Import package org.apache.juli.logging;provider=paxlogging;version=1.0</require>
+    <require name='package' filter='(&amp;(package=org.apache.log))' extend='false' multiple='false' optional='true'>Import package org.apache.log;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.apache.log4j)(version&gt;=1.2.15)(provider=paxlogging)(mandatory:&lt;*provider))' extend='false' multiple='false' optional='false'>Import package org.apache.log4j;provider=paxlogging;version=1.2.15</require>
+    <require name='package' filter='(&amp;(package=org.apache.log4j.spi)(version&gt;=1.2.15)(provider=paxlogging)(mandatory:&lt;*provider))' extend='false' multiple='false' optional='false'>Import package org.apache.log4j.spi;provider=paxlogging;version=1.2.15</require>
+    <require name='package' filter='(&amp;(package=org.apache.log4j.xml)(version&gt;=1.2.15)(provider=paxlogging)(mandatory:&lt;*provider))' extend='false' multiple='false' optional='false'>Import package org.apache.log4j.xml;provider=paxlogging;version=1.2.15</require>
+    <require name='package' filter='(&amp;(package=org.knopflerfish.service.log)(version&gt;=1.1.0)(provider=paxlogging)(mandatory:&lt;*provider))' extend='false' multiple='false' optional='false'>Import package org.knopflerfish.service.log;provider=paxlogging;version=1.1.0</require>
+    <require name='package' filter='(&amp;(package=org.ops4j.pax.logging)(version&gt;=0.9.5)(!(version&gt;=2.0.0))(provider=paxlogging)(mandatory:&lt;*provider))' extend='false' multiple='false' optional='false'>Import package org.ops4j.pax.logging;provider=paxlogging;version="[0.9.5,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.ops4j.pax.logging.avalon)(version&gt;=0.9.5)(!(version&gt;=2.0.0))(provider=paxlogging)(mandatory:&lt;*provider))' extend='false' multiple='false' optional='false'>Import package org.ops4j.pax.logging.avalon;provider=paxlogging;version="[0.9.5,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework;version="[1.0.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.event)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='true'>Import package org.osgi.service.event;resolution:=optional;version="[1.0.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.log;version="[1.3.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.util.tracker)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.util.tracker;version="[1.0.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.5.6)(provider=paxlogging)(mandatory:&lt;*provider))' extend='false' multiple='false' optional='false'>Import package org.slf4j;provider=paxlogging;version=1.5.6</require>
+    <require name='package' filter='(&amp;(package=org.slf4j.helpers)(version&gt;=1.5.6)(provider=paxlogging)(mandatory:&lt;*provider))' extend='false' multiple='false' optional='false'>Import package org.slf4j.helpers;provider=paxlogging;version=1.5.6</require>
+    <require name='package' filter='(&amp;(package=org.slf4j.spi)(version&gt;=1.5.6)(provider=paxlogging)(mandatory:&lt;*provider))' extend='false' multiple='false' optional='false'>Import package org.slf4j.spi;provider=paxlogging;version=1.5.6</require>
+    <require name='package' filter='(&amp;(package=org.w3c.dom))' extend='false' multiple='false' optional='false'>Import package org.w3c.dom</require>
+  </resource>
+  <resource id='org.ops4j.pax.logging.pax-logging-service/1.4.0' symbolicname='org.ops4j.pax.logging.pax-logging-service' presentationname='OPS4J Pax Logging - Service' uri='http://repo1.maven.org/maven2/org/ops4j/pax/logging/pax-logging-service/1.4/pax-logging-service-1.4.jar' version='1.4.0'>
+    <description>Pax Logging Service is a Log4J driven service that supports Jakarta Commons Logging,    Log4J, Avalon Logging, SLF4J and Pax Logging clients. Note that all this clients must use the Pax Logging    Client library in the proper way. See documentation for details.</description>
+    <size>427221</size>
+    <documentation>http://www.ops4j.org/projects/pax/logging/pax-logging-service</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.html</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.ops4j.pax.logging.pax-logging-service'/>
+      <p n='presentationname' v='OPS4J Pax Logging - Service'/>
+      <p n='version' t='version' v='1.4.0'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.ops4j.pax.logging.spi'/>
+      <p n='version' t='version' v='1.4.0'/>
+      <p n='provider' v='paxlogging'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=com.sun.jdmk.comm))' extend='false' multiple='false' optional='true'>Import package com.sun.jdmk.comm;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.jms))' extend='false' multiple='false' optional='true'>Import package javax.jms;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.mail))' extend='false' multiple='false' optional='true'>Import package javax.mail;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.mail.internet))' extend='false' multiple='false' optional='true'>Import package javax.mail.internet;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.management))' extend='false' multiple='false' optional='true'>Import package javax.management;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.naming))' extend='false' multiple='false' optional='true'>Import package javax.naming;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.swing))' extend='false' multiple='false' optional='true'>Import package javax.swing;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.swing.border))' extend='false' multiple='false' optional='true'>Import package javax.swing.border;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.swing.event))' extend='false' multiple='false' optional='true'>Import package javax.swing.event;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.swing.table))' extend='false' multiple='false' optional='true'>Import package javax.swing.table;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.swing.text))' extend='false' multiple='false' optional='true'>Import package javax.swing.text;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.swing.tree))' extend='false' multiple='false' optional='true'>Import package javax.swing.tree;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.xml.parsers))' extend='false' multiple='false' optional='false'>Import package javax.xml.parsers</require>
+    <require name='package' filter='(&amp;(package=org.knopflerfish.service.log)(version&gt;=1.1.0)(!(version&gt;=2.0.0))(provider=paxlogging)(mandatory:&lt;*provider))' extend='false' multiple='false' optional='false'>Import package org.knopflerfish.service.log;provider=paxlogging;version="[1.1.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.ops4j.pax.logging)(version&gt;=0.9.5)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.ops4j.pax.logging;version="[0.9.5,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.ops4j.pax.logging.spi)(version&gt;=1.4.0)(provider=paxlogging)(mandatory:&lt;*provider))' extend='false' multiple='false' optional='false'>Import package org.ops4j.pax.logging.spi;provider=paxlogging;version=1.4</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework;version="[1.0.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.cm)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.cm;version="[1.0.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.log;version="[1.3.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.util.tracker)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.util.tracker;version="[1.3.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.w3c.dom))' extend='false' multiple='false' optional='false'>Import package org.w3c.dom</require>
+    <require name='package' filter='(&amp;(package=org.xml.sax))' extend='false' multiple='false' optional='false'>Import package org.xml.sax</require>
+    <require name='package' filter='(&amp;(package=org.xml.sax.helpers))' extend='false' multiple='false' optional='false'>Import package org.xml.sax.helpers</require>
+  </resource>
+  <resource id='org.ops4j.pax.swissbox.lifecycle/1.5.0' symbolicname='org.ops4j.pax.swissbox.lifecycle' presentationname='OPS4J Pax Swissbox :: Lifecycle' uri='http://repo1.maven.org/maven2/org/ops4j/pax/swissbox/pax-swissbox-lifecycle/1.5.0/pax-swissbox-lifecycle-1.5.0.jar' version='1.5.0'>
+    <description>OPS4J Pax Swissbox - Utilities related to lifecycle.    Detailed information to be found at http://wiki.ops4j.org/confluence/x/NgRN.</description>
+    <size>6491</size>
+    <documentation>http://www.ops4j.org/</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.html</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.ops4j.pax.swissbox.lifecycle'/>
+      <p n='presentationname' v='OPS4J Pax Swissbox :: Lifecycle'/>
+      <p n='version' t='version' v='1.5.0'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.ops4j.pax.swissbox.lifecycle'/>
+      <p n='version' t='version' v='1.5.0'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=org.ops4j.pax.swissbox.lifecycle)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.ops4j.pax.swissbox.lifecycle;version="[1.5,2)"</require>
+  </resource>
+  <resource id='org.ops4j.pax.swissbox.optional.jcl/1.5.0' symbolicname='org.ops4j.pax.swissbox.optional.jcl' presentationname='OPS4J Pax Swissbox :: Optional JCL' uri='http://repo1.maven.org/maven2/org/ops4j/pax/swissbox/pax-swissbox-optional-jcl/1.5.0/pax-swissbox-optional-jcl-1.5.0.jar' version='1.5.0'>
+    <description>OPS4J Pax Swissbox - Optional Apache Commons Logging.    Detailed information to be found at http://wiki.ops4j.org/confluence/x/NwRN.</description>
+    <size>6446</size>
+    <documentation>http://www.ops4j.org/</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.html</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.ops4j.pax.swissbox.optional.jcl'/>
+      <p n='presentationname' v='OPS4J Pax Swissbox :: Optional JCL'/>
+      <p n='version' t='version' v='1.5.0'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.logging'/>
+      <p n='version' t='version' v='1.0.4'/>
+    </capability>
+  </resource>
+  <resource id='org.ops4j.pax.swissbox.core/1.5.0' symbolicname='org.ops4j.pax.swissbox.core' presentationname='OPS4J Pax Swissbox :: OSGi Core' uri='http://repo1.maven.org/maven2/org/ops4j/pax/swissbox/pax-swissbox-core/1.5.0/pax-swissbox-core-1.5.0.jar' version='1.5.0'>
+    <description>OPS4J Pax Swissbox - Utilities related to OSGi core framework.    Detailed information to be found at http://wiki.ops4j.org/confluence/x/MgRN.</description>
+    <size>8747</size>
+    <documentation>http://www.ops4j.org/</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.html</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.ops4j.pax.swissbox.core'/>
+      <p n='presentationname' v='OPS4J Pax Swissbox :: OSGi Core'/>
+      <p n='version' t='version' v='1.5.0'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.ops4j.pax.swissbox.core'/>
+      <p n='version' t='version' v='1.5.0'/>
+      <p n='uses:' v='org.osgi.framework,org.ops4j.lang'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=org.ops4j.lang)(version&gt;=1.3.0))' extend='false' multiple='false' optional='false'>Import package org.ops4j.lang;version=1.3.0</require>
+    <require name='package' filter='(&amp;(package=org.ops4j.pax.swissbox.core)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.ops4j.pax.swissbox.core;version="[1.5,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework;version="[1.3,2)"</require>
+  </resource>
+  <resource id='org.ops4j.pax.web.pax-web-extender-whiteboard/2.1.6' symbolicname='org.ops4j.pax.web.pax-web-extender-whiteboard' presentationname='OPS4J Pax Web - Extender - Whiteboard' uri='http://repo1.maven.org/maven2/org/ops4j/pax/web/pax-web-extender-whiteboard/2.1.6/pax-web-extender-whiteboard-2.1.6.jar' version='2.1.6'>
+    <description>Facilitates easy http context/servlet/resources/filters/listeners registered.    Detailed information to be found at http://wiki.ops4j.org/confluence/x/LAJN.</description>
+    <size>87204</size>
+    <documentation>http://www.ops4j.org/</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.html</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.ops4j.pax.web.pax-web-extender-whiteboard'/>
+      <p n='presentationname' v='OPS4J Pax Web - Extender - Whiteboard'/>
+      <p n='version' t='version' v='2.1.6'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.ops4j.pax.web.extender.whiteboard'/>
+      <p n='version' t='version' v='2.1.6'/>
+      <p n='uses:' v='javax.servlet,org.osgi.service.http'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.ops4j.pax.web.extender.whiteboard.runtime'/>
+      <p n='version' t='version' v='2.1.6'/>
+      <p n='uses:' v='org.ops4j.pax.web.extender.whiteboard,javax.servlet,org.osgi.service.http'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.security.auth))' extend='false' multiple='false' optional='false'>Import package javax.security.auth</require>
+    <require name='package' filter='(&amp;(package=javax.security.auth.callback))' extend='false' multiple='false' optional='false'>Import package javax.security.auth.callback</require>
+    <require name='package' filter='(&amp;(package=javax.security.auth.login))' extend='false' multiple='false' optional='false'>Import package javax.security.auth.login</require>
+    <require name='package' filter='(&amp;(package=javax.servlet)(version&gt;=2.3.0)(!(version&gt;=3.1.0)))' extend='false' multiple='false' optional='false'>Import package javax.servlet;version="[2.3.0,3.1.0)"</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.http)(version&gt;=2.3.0)(!(version&gt;=3.1.0)))' extend='false' multiple='false' optional='false'>Import package javax.servlet.http;version="[2.3.0,3.1.0)"</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.resources)(version&gt;=2.3.0)(!(version&gt;=3.1.0)))' extend='false' multiple='false' optional='false'>Import package javax.servlet.resources;version="[2.3.0,3.1.0)"</require>
+    <require name='package' filter='(&amp;(package=javax.xml.parsers))' extend='false' multiple='false' optional='false'>Import package javax.xml.parsers</require>
+    <require name='package' filter='(&amp;(package=org.ops4j.pax.web.extender.whiteboard)(version&gt;=2.1.6))' extend='false' multiple='false' optional='false'>Import package org.ops4j.pax.web.extender.whiteboard;version=2.1.6</require>
+    <require name='package' filter='(&amp;(package=org.ops4j.pax.web.extender.whiteboard.runtime)(version&gt;=2.1.6))' extend='false' multiple='false' optional='false'>Import package org.ops4j.pax.web.extender.whiteboard.runtime;version=2.1.6</require>
+    <require name='package' filter='(&amp;(package=org.ops4j.pax.web.service)(version&gt;=0.6.0))' extend='false' multiple='false' optional='true'>Import package org.ops4j.pax.web.service;resolution:=optional;version=0.6.0</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework;version="[1.0.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.http)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.http;version="[1.0.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.util.tracker)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.util.tracker;version="[1.3.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.slf4j;version="[1.5,2.0)"</require>
+  </resource>
+  <resource id='org.ops4j.pax.web.pax-web-jetty-bundle/2.1.6' symbolicname='org.ops4j.pax.web.pax-web-jetty-bundle' presentationname='OPS4J Pax Web - Jetty Bundle' uri='http://repo1.maven.org/maven2/org/ops4j/pax/web/pax-web-jetty-bundle/2.1.6/pax-web-jetty-bundle-2.1.6.jar' version='2.1.6'>
+    <description>Pax Web is a OSGi Http Service based on Jetty 6.    Detailed information to be found at http://wiki.ops4j.org/confluence/x/AYAz.</description>
+    <size>2785393</size>
+    <documentation>http://www.ops4j.org/</documentation>
+    <license>http://www.apache.org/licenses/LICENSE-2.0.html</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='org.ops4j.pax.web.pax-web-jetty-bundle'/>
+      <p n='presentationname' v='OPS4J Pax Web - Jetty Bundle'/>
+      <p n='version' t='version' v='2.1.6'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.servlet'/>
+      <p n='version' t='version' v='2.6.0'/>
+      <p n='uses:' v='javax.servlet.annotation,javax.servlet.descriptor'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.servlet.annotation'/>
+      <p n='version' t='version' v='2.6.0'/>
+      <p n='uses:' v='javax.servlet'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.servlet.descriptor'/>
+      <p n='version' t='version' v='2.6.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.servlet.http'/>
+      <p n='version' t='version' v='2.6.0'/>
+      <p n='uses:' v='javax.servlet'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.servlet.resources'/>
+      <p n='version' t='version' v='2.6.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.servlet'/>
+      <p n='version' t='version' v='3.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.servlet.annotation'/>
+      <p n='version' t='version' v='3.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.servlet.descriptor'/>
+      <p n='version' t='version' v='3.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.servlet.http'/>
+      <p n='version' t='version' v='3.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.servlet.resources'/>
+      <p n='version' t='version' v='3.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.ops4j.pax.web.service'/>
+      <p n='version' t='version' v='2.1.6'/>
+      <p n='uses:' v='org.osgi.framework,javax.servlet,org.osgi.service.http'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.ops4j.pax.web.service.spi'/>
+      <p n='version' t='version' v='2.1.6'/>
+      <p n='uses:' v='javax.servlet,org.osgi.service.http,org.ops4j.pax.web.service.spi.model,org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.ops4j.pax.web.service.spi.model'/>
+      <p n='version' t='version' v='2.1.6'/>
+      <p n='uses:' v='javax.servlet,org.osgi.framework,org.osgi.service.http,org.ops4j.pax.web.service,org.ops4j.pax.web.service.spi.util,org.slf4j'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.ops4j.pax.web.service.spi.util'/>
+      <p n='version' t='version' v='2.1.6'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.http'/>
+      <p n='version' t='version' v='1.2.0'/>
+      <p n='uses:' v='javax.servlet.http,javax.servlet'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.security.authentication'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.servlet,org.eclipse.jetty.server,org.eclipse.jetty.security,javax.servlet.http,org.eclipse.jetty.util,org.eclipse.jetty.util.security,org.eclipse.jetty.util.log,org.eclipse.jetty.server.session,javax.security.auth'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.webapp.jmx'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.continuation'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.servlet,org.mortbay.log,org.mortbay.util.ajax'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.server.ssl'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.server,org.eclipse.jetty.io,javax.security.cert,javax.net.ssl,org.eclipse.jetty.util.log,org.eclipse.jetty.util,org.eclipse.jetty.util.ssl,org.eclipse.jetty.io.nio,org.eclipse.jetty.server.nio,org.eclipse.jetty.server.bio,org.eclipse.jetty.io.bio'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.util.thread'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.util.component,org.eclipse.jetty.util.log,org.eclipse.jetty.util'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.plus.jaas.spi'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.security.auth.callback,org.eclipse.jetty.util.security,javax.security.auth,org.eclipse.jetty.util.log,org.eclipse.jetty.plus.jaas,org.eclipse.jetty.plus.jaas.callback,javax.security.auth.spi,javax.security.auth.login,javax.naming,javax.sql,org.eclipse.jetty.util,javax.naming.directory,org.eclipse.jetty.server,org.eclipse.jetty.security'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.io.bio'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.net.ssl,org.eclipse.jetty.util.log,org.eclipse.jetty.io'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.server.handler'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.server,org.eclipse.jetty.util.component,org.eclipse.jetty.util.log,org.eclipse.jetty.util,org.eclipse.jetty.io.nio,org.eclipse.jetty.io,org.eclipse.jetty.util.thread,org.eclipse.jetty.http,javax.servlet,javax.servlet.http,org.eclipse.jetty.util.resource,javax.servlet.descriptor,org.eclipse.jetty.http.gzip,org.eclipse.jetty.continuation,org.eclipse.jetty.util.statistic'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.deploy.util'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.jndi'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.naming,org.eclipse.jetty.server.handler,org.eclipse.jetty.util.log,javax.naming.spi,javax.sql,org.eclipse.jetty.util.component,org.eclipse.jetty.jndi.local'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.servlets'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.http,org.eclipse.jetty.server,javax.servlet,org.eclipse.jetty.util.log,javax.servlet.http,org.eclipse.jetty.util,org.eclipse.jetty.io,org.eclipse.jetty.continuation,org.eclipse.jetty.util.thread,org.eclipse.jetty.http.gzip,org.eclipse.jetty.client'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.servlets.jmx'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.servlet.jmx'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.servlet,org.eclipse.jetty.jmx'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.deploy.graph'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.util'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.deploy'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.server.handler,org.eclipse.jetty.util,org.eclipse.jetty.deploy.graph,org.eclipse.jetty.util.log,org.eclipse.jetty.util.component,org.eclipse.jetty.server,org.eclipse.jetty.util.resource,org.eclipse.jetty.xml,org.eclipse.jetty.deploy.bindings,org.eclipse.jetty.webapp'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.http.ssl'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.util.ssl'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.util.resource'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.util.log,org.eclipse.jetty.util'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.plus.annotation'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.webapp,javax.servlet,org.eclipse.jetty.server.handler,org.eclipse.jetty.util,javax.naming,org.eclipse.jetty.util.log,org.eclipse.jetty.servlet'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.webapp'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.util.resource,org.eclipse.jetty.xml,org.eclipse.jetty.util.log,org.eclipse.jetty.util,org.eclipse.jetty.server.handler,org.eclipse.jetty.server,org.eclipse.jetty.util.security,org.eclipse.jetty.servlet,org.eclipse.jetty.io,org.eclipse.jetty.security,org.eclipse.jetty.http,javax.servlet,javax.servlet.descriptor,org.eclipse.jetty.server.session,javax.servlet.http'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.plus.webapp'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.webapp,javax.naming,org.eclipse.jetty.jndi,org.eclipse.jetty.server,org.eclipse.jetty.plus.jndi,org.eclipse.jetty.util.resource,org.eclipse.jetty.jndi.local,org.eclipse.jetty.util.log,org.eclipse.jetty.xml,org.eclipse.jetty.servlet,javax.servlet,org.eclipse.jetty.plus.annotation,org.eclipse.jetty.util'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.deploy.bindings'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.server.handler,org.eclipse.jetty.deploy.graph,org.eclipse.jetty.util.log,org.eclipse.jetty.deploy,org.eclipse.jetty.webapp,org.eclipse.jetty.util.resource,org.eclipse.jetty.xml,org.eclipse.jetty.server'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.security.jaspi.callback'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.security.auth.callback,org.eclipse.jetty.util.security,javax.security.auth'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.server.handler.jmx'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.server,org.eclipse.jetty.server.handler,org.eclipse.jetty.jmx,org.eclipse.jetty.util.resource,org.eclipse.jetty.util.log,org.eclipse.jetty.util'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.deploy.jmx'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.server.handler,org.eclipse.jetty.jmx,org.eclipse.jetty.deploy.graph,org.eclipse.jetty.deploy'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.util.preventers'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.util.log,org.eclipse.jetty.util.component,javax.imageio,javax.xml.parsers'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.server.bio'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.server,org.eclipse.jetty.io.bio,org.eclipse.jetty.io,org.eclipse.jetty.http,org.eclipse.jetty.util.thread,org.eclipse.jetty.util.log,org.eclipse.jetty.util.component'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.util'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.util.log,org.eclipse.jetty.util.thread,org.eclipse.jetty.util.resource,javax.servlet,javax.servlet.http,org.eclipse.jetty.util.component'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.util.security'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.util,org.eclipse.jetty.util.resource,org.eclipse.jetty.util.log'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.io'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.util.log,org.eclipse.jetty.util,org.eclipse.jetty.io.nio,org.eclipse.jetty.util.thread'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.http'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.io,org.eclipse.jetty.util.log,org.eclipse.jetty.util,org.eclipse.jetty.util.component,org.eclipse.jetty.util.resource,org.eclipse.jetty.io.bio'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.plus.jaas'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.plus.jaas.callback,javax.security.auth.callback,org.eclipse.jetty.server,org.eclipse.jetty.security,javax.security.auth.login,javax.security.auth,org.eclipse.jetty.util.component,org.eclipse.jetty.util.log,org.eclipse.jetty.util'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.deploy.providers'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.server,org.eclipse.jetty.server.handler,org.eclipse.jetty.deploy.util,org.eclipse.jetty.util.resource,org.eclipse.jetty.deploy,org.eclipse.jetty.xml,org.eclipse.jetty.util,org.eclipse.jetty.util.component,org.eclipse.jetty.util.log,org.eclipse.jetty.webapp'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.ajp'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.server,org.eclipse.jetty.io,org.eclipse.jetty.http,org.eclipse.jetty.util.log,javax.servlet,org.eclipse.jetty.server.bio'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.security.jaspi.modules'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.security.auth.callback,org.eclipse.jetty.util.security,org.eclipse.jetty.security.authentication,javax.security.auth,org.eclipse.jetty.security.jaspi.callback,org.eclipse.jetty.util,javax.servlet.http,org.eclipse.jetty.util.log,org.eclipse.jetty.server,org.eclipse.jetty.security'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.server.session'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.servlet,org.eclipse.jetty.server,org.eclipse.jetty.server.handler,org.eclipse.jetty.util.log,javax.servlet.http,org.eclipse.jetty.util.component,org.eclipse.jetty.util.statistic,org.eclipse.jetty.http,org.eclipse.jetty.util,javax.naming,javax.sql'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.servlet.listener'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.servlet,org.eclipse.jetty.util.log,org.eclipse.jetty.util'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.deploy.providers.jmx'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.client'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.util.thread,org.eclipse.jetty.io,org.eclipse.jetty.http,org.eclipse.jetty.util.log,org.eclipse.jetty.client.security,org.eclipse.jetty.util.component,org.eclipse.jetty.io.nio,org.eclipse.jetty.util,javax.net.ssl,org.eclipse.jetty.util.ssl,org.eclipse.jetty.io.bio,javax.net'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.client.security'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.client,org.eclipse.jetty.io,org.eclipse.jetty.http,org.eclipse.jetty.util,org.eclipse.jetty.util.log'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.security'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.servlet,org.eclipse.jetty.server,org.eclipse.jetty.util.security,org.eclipse.jetty.http,javax.servlet.annotation,org.eclipse.jetty.util,javax.servlet.http,org.eclipse.jetty.security.authentication,javax.security.auth,org.eclipse.jetty.util.resource,org.eclipse.jetty.util.log,org.eclipse.jetty.util.component,org.eclipse.jetty.server.handler,org.ietf.jgss'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.jndi.java'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.naming,org.eclipse.jetty.util.log,org.eclipse.jetty.jndi,javax.naming.spi'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.jndi.factories'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.util.security,javax.naming,javax.naming.spi'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.util.log.jmx'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.jmx,org.eclipse.jetty.util.log'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.server.nio.jmx'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.util.component'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.util.log,org.eclipse.jetty.util,org.eclipse.jetty.util.resource'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.util.component.jmx'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.plus.servlet'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.servlet,org.eclipse.jetty.plus.annotation'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.plus.jaas.callback'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.security.auth.callback,org.eclipse.jetty.server,org.eclipse.jetty.util.security'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.websocket'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.io,org.eclipse.jetty.util,org.eclipse.jetty.util.log,org.eclipse.jetty.io.nio,org.eclipse.jetty.http,org.eclipse.jetty.util.thread,javax.net.ssl,org.eclipse.jetty.util.component,org.eclipse.jetty.util.ssl,javax.servlet.http,org.eclipse.jetty.server,javax.servlet,org.eclipse.jetty.server.handler'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.xml'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.util.component,org.eclipse.jetty.util.resource,org.eclipse.jetty.util.log,org.eclipse.jetty.util,org.xml.sax,javax.xml.parsers,org.xml.sax.helpers'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.server'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.io,org.eclipse.jetty.util.log,org.eclipse.jetty.util.statistic,org.eclipse.jetty.http,org.eclipse.jetty.util.thread,org.eclipse.jetty.util.component,org.eclipse.jetty.server.ssl,org.eclipse.jetty.server.nio,org.eclipse.jetty.util.resource,org.eclipse.jetty.util,javax.servlet,org.eclipse.jetty.continuation,org.eclipse.jetty.server.handler,javax.servlet.http,org.eclipse.jetty.io.nio,org.eclipse.jetty.server.session,javax.security.auth'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.servlet'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.server,org.eclipse.jetty.io,org.eclipse.jetty.http,org.eclipse.jetty.server.nio,org.eclipse.jetty.server.handler,org.eclipse.jetty.util.resource,javax.servlet,org.eclipse.jetty.server.ssl,org.eclipse.jetty.util.log,javax.servlet.http,org.eclipse.jetty.util,org.eclipse.jetty.util.component,javax.servlet.descriptor,org.eclipse.jetty.server.session,org.eclipse.jetty.security,org.eclipse.jetty.continuation'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.util.thread.jmx'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.server.nio'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.server,org.eclipse.jetty.io,org.eclipse.jetty.http,org.eclipse.jetty.util.log,org.eclipse.jetty.io.nio,org.eclipse.jetty.util.thread,org.eclipse.jetty.util'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.plus.jndi'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.naming,org.eclipse.jetty.util.log,org.eclipse.jetty.jndi,javax.transaction'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.jndi.local'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.naming,org.eclipse.jetty.jndi,org.eclipse.jetty.util.log,javax.naming.spi'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.http.gzip'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.servlet,javax.servlet.http,org.eclipse.jetty.util'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.plus.security'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.server,org.eclipse.jetty.util.security,javax.naming,org.eclipse.jetty.security,javax.sql,org.eclipse.jetty.plus.jndi,org.eclipse.jetty.util.log'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.client.webdav'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.client,org.eclipse.jetty.io,org.eclipse.jetty.util.log,org.eclipse.jetty.client.security,org.eclipse.jetty.util'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.io.nio'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.io,org.eclipse.jetty.util.log,org.eclipse.jetty.util.thread,org.eclipse.jetty.util.component,org.eclipse.jetty.util,javax.net.ssl'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.util.statistic'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.util'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.annotations'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.webapp,org.eclipse.jetty.util.resource,javax.servlet,org.eclipse.jetty.servlet,org.eclipse.jetty.server.handler,org.eclipse.jetty.util.log,org.eclipse.jetty.plus.annotation,javax.servlet.annotation,org.eclipse.jetty.util,org.objectweb.asm,org.objectweb.asm.commons,org.eclipse.jetty.security,org.eclipse.jetty.server,javax.naming,org.eclipse.jetty.plus.jndi,org.eclipse.jetty.util.component,org.eclipse.jetty.util.security,javax.servlet.http'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.util.ssl'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.net.ssl,org.eclipse.jetty.util.security,org.eclipse.jetty.util.resource,org.eclipse.jetty.util.component,org.eclipse.jetty.util.log,org.eclipse.jetty.util'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.rewrite.handler'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.servlet.http,org.eclipse.jetty.server,org.eclipse.jetty.http,org.eclipse.jetty.util,org.eclipse.jetty.client,org.eclipse.jetty.io,org.eclipse.jetty.util.log,javax.servlet,org.eclipse.jetty.util.thread,org.eclipse.jetty.server.handler'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.nested'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='javax.servlet,org.eclipse.jetty.server,org.eclipse.jetty.io,org.eclipse.jetty.http,javax.servlet.http,org.eclipse.jetty.io.bio,org.eclipse.jetty.util.log'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.server.session.jmx'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.server,org.eclipse.jetty.server.handler.jmx,org.eclipse.jetty.server.handler,org.eclipse.jetty.server.session'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.security.jaspi'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.server,org.eclipse.jetty.security,org.eclipse.jetty.security.authentication,javax.security.auth,javax.servlet,org.eclipse.jetty.util.log,javax.servlet.http,javax.security.auth.callback,org.eclipse.jetty.util.security,org.eclipse.jetty.security.jaspi.callback'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.server.jmx'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.server,org.eclipse.jetty.server.handler,org.eclipse.jetty.jmx'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.jmx'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.util.component,javax.management,javax.management.remote,org.eclipse.jetty.util.thread,org.eclipse.jetty.util.log,javax.management.modelmbean,org.eclipse.jetty.util'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.util.log'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.slf4j.spi,org.slf4j.helpers,org.slf4j,org.eclipse.jetty.util'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.eclipse.jetty.util.ajax'/>
+      <p n='version' t='version' v='8.1.10.v20130312'/>
+      <p n='uses:' v='org.eclipse.jetty.util,org.eclipse.jetty.util.log'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=com.sun.org.apache.commons.logging))' extend='false' multiple='false' optional='true'>Import package com.sun.org.apache.commons.logging;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.crypto))' extend='false' multiple='false' optional='false'>Import package javax.crypto</require>
+    <require name='package' filter='(&amp;(package=javax.imageio))' extend='false' multiple='false' optional='false'>Import package javax.imageio</require>
+    <require name='package' filter='(&amp;(package=javax.imageio.metadata))' extend='false' multiple='false' optional='false'>Import package javax.imageio.metadata</require>
+    <require name='package' filter='(&amp;(package=javax.management))' extend='false' multiple='false' optional='false'>Import package javax.management</require>
+    <require name='package' filter='(&amp;(package=javax.management.modelmbean))' extend='false' multiple='false' optional='false'>Import package javax.management.modelmbean</require>
+    <require name='package' filter='(&amp;(package=javax.management.remote))' extend='false' multiple='false' optional='false'>Import package javax.management.remote</require>
+    <require name='package' filter='(&amp;(package=javax.naming))' extend='false' multiple='false' optional='false'>Import package javax.naming</require>
+    <require name='package' filter='(&amp;(package=javax.naming.directory))' extend='false' multiple='false' optional='false'>Import package javax.naming.directory</require>
+    <require name='package' filter='(&amp;(package=javax.naming.spi))' extend='false' multiple='false' optional='false'>Import package javax.naming.spi</require>
+    <require name='package' filter='(&amp;(package=javax.net))' extend='false' multiple='false' optional='false'>Import package javax.net</require>
+    <require name='package' filter='(&amp;(package=javax.net.ssl))' extend='false' multiple='false' optional='true'>Import package javax.net.ssl;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.security.auth))' extend='false' multiple='false' optional='false'>Import package javax.security.auth</require>
+    <require name='package' filter='(&amp;(package=javax.security.auth.callback))' extend='false' multiple='false' optional='false'>Import package javax.security.auth.callback</require>
+    <require name='package' filter='(&amp;(package=javax.security.auth.login))' extend='false' multiple='false' optional='false'>Import package javax.security.auth.login</require>
+    <require name='package' filter='(&amp;(package=javax.security.auth.spi))' extend='false' multiple='false' optional='false'>Import package javax.security.auth.spi</require>
+    <require name='package' filter='(&amp;(package=javax.security.auth.x500))' extend='false' multiple='false' optional='false'>Import package javax.security.auth.x500</require>
+    <require name='package' filter='(&amp;(package=javax.security.cert))' extend='false' multiple='false' optional='true'>Import package javax.security.cert;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.security.sasl))' extend='false' multiple='false' optional='false'>Import package javax.security.sasl</require>
+    <require name='package' filter='(&amp;(package=javax.servlet)(version&gt;=2.3.0)(!(version&gt;=3.1.0)))' extend='false' multiple='false' optional='true'>Import package javax.servlet;resolution:=optional;version="[2.3.0,3.1.0)"</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.http)(version&gt;=2.3.0)(!(version&gt;=3.1.0)))' extend='false' multiple='false' optional='true'>Import package javax.servlet.http;resolution:=optional;version="[2.3.0,3.1.0)"</require>
+    <require name='package' filter='(&amp;(package=javax.sql))' extend='false' multiple='false' optional='false'>Import package javax.sql</require>
+    <require name='package' filter='(&amp;(package=javax.transaction))' extend='false' multiple='false' optional='false'>Import package javax.transaction</require>
+    <require name='package' filter='(&amp;(package=javax.xml.parsers))' extend='false' multiple='false' optional='false'>Import package javax.xml.parsers</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.logging)(version&gt;=1.0.4))' extend='false' multiple='false' optional='true'>Import package org.apache.commons.logging;resolution:=optional;version=1.0.4</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.http)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.http;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.http.ssl)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.http.ssl;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.io)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.io;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.security)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.security;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.security.authentication)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.security.authentication;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.server)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.server;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.server.bio)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.server.bio;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.server.handler)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.server.handler;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.server.nio)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.server.nio;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.server.session)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.server.session;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.server.ssl)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.server.ssl;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.servlet)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.servlet;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.util)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.util;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.util.resource)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.util.resource;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.util.security)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.util.security;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.util.ssl)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.util.ssl;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.util.thread)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.util.thread;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.jetty.xml)(version&gt;=7.1.0)(!(version&gt;=8.1.0)))' extend='false' multiple='false' optional='true'>Import package org.eclipse.jetty.xml;resolution:=optional;version="[7.1.0,8.1.0)"</require>
+    <require name='package' filter='(&amp;(package=org.ietf.jgss))' extend='false' multiple='false' optional='false'>Import package org.ietf.jgss</require>
+    <require name='package' filter='(&amp;(package=org.mortbay.log))' extend='false' multiple='false' optional='true'>Import package org.mortbay.log;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.mortbay.util.ajax))' extend='false' multiple='false' optional='true'>Import package org.mortbay.util.ajax;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.objectweb.asm))' extend='false' multiple='false' optional='true'>Import package org.objectweb.asm;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.objectweb.asm.commons))' extend='false' multiple='false' optional='true'>Import package org.objectweb.asm.commons;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.ops4j.pax.web.jsp)(version&gt;=2.1.6))' extend='false' multiple='false' optional='true'>Import package org.ops4j.pax.web.jsp;resolution:=optional;version=2.1.6</require>
+    <require name='package' filter='(&amp;(package=org.ops4j.pax.web.service)(version&gt;=2.1.6))' extend='false' multiple='false' optional='true'>Import package org.ops4j.pax.web.service;resolution:=optional;version=2.1.6</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework;version="[1.0.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.cm)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.cm;version="[1.0.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.event))' extend='false' multiple='false' optional='true'>Import package org.osgi.service.event;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.http)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='true'>Import package org.osgi.service.http;resolution:=optional;version="[1.0.0,2.0.0)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.log))' extend='false' multiple='false' optional='true'>Import package org.osgi.service.log;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.packageadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='true'>Import package org.osgi.service.packageadmin;resolution:=optional;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.util.tracker))' extend='false' multiple='false' optional='false'>Import package org.osgi.util.tracker</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='true'>Import package org.slf4j;resolution:=optional;version="[1.5,2.0)"</require>
+    <require name='package' filter='(&amp;(package=org.slf4j.helpers)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='true'>Import package org.slf4j.helpers;resolution:=optional;version="[1.5,2.0)"</require>
+    <require name='package' filter='(&amp;(package=org.slf4j.spi)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='true'>Import package org.slf4j.spi;resolution:=optional;version="[1.5,2.0)"</require>
+    <require name='package' filter='(&amp;(package=org.w3c.dom))' extend='false' multiple='false' optional='false'>Import package org.w3c.dom</require>
+    <require name='package' filter='(&amp;(package=org.xml.sax))' extend='false' multiple='false' optional='false'>Import package org.xml.sax</require>
+    <require name='package' filter='(&amp;(package=org.xml.sax.helpers))' extend='false' multiple='false' optional='false'>Import package org.xml.sax.helpers</require>
+  </resource>
+  <resource id='osgi.cmpn/4.3.0.201111022214' symbolicname='osgi.cmpn' presentationname='osgi.cmpn' uri='http://repo1.maven.org/maven2/org/osgi/org.osgi.compendium/4.3.0/org.osgi.compendium-4.3.0.jar' version='4.3.0.201111022214'>
+    <description>OSGi Service Platform Release 4 Version 4.3, Compendium Interfaces and Classes for use in compiling bundles.</description>
+    <size>768335</size>
+    <license>http://opensource.org/licenses/apache2.0.php; link="http://www.apache.org/licenses/LICENSE-2.0"; description="Apache License, Version 2.0"</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='osgi.cmpn'/>
+      <p n='presentationname' v='osgi.cmpn'/>
+      <p n='version' t='version' v='4.3.0.201111022214'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.application'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.application'/>
+      <p n='version' t='version' v='1.1.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.blueprint.reflect'/>
+      <p n='version' t='version' v='1.0.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.blueprint.container'/>
+      <p n='version' t='version' v='1.0.2'/>
+      <p n='uses:' v='org.osgi.service.blueprint.reflect,org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.cm'/>
+      <p n='version' t='version' v='1.4.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.component'/>
+      <p n='version' t='version' v='1.2.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.component.annotations'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.coordinator'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.deploymentadmin'/>
+      <p n='version' t='version' v='1.1.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.deploymentadmin.spi'/>
+      <p n='version' t='version' v='1.0.1'/>
+      <p n='uses:' v='org.osgi.framework,org.osgi.service.deploymentadmin'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.device'/>
+      <p n='version' t='version' v='1.1.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.dmt.notification'/>
+      <p n='version' t='version' v='2.0.0'/>
+      <p n='uses:' v='org.osgi.service.dmt'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.dmt'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.dmt.security'/>
+      <p n='version' t='version' v='2.0.0'/>
+      <p n='uses:' v='org.osgi.service.dmt'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.dmt.spi'/>
+      <p n='version' t='version' v='2.0.0'/>
+      <p n='uses:' v='org.osgi.service.dmt'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.dmt.notification.spi'/>
+      <p n='version' t='version' v='2.0.0'/>
+      <p n='uses:' v='org.osgi.service.dmt.notification'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.event'/>
+      <p n='version' t='version' v='1.3.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.http'/>
+      <p n='version' t='version' v='1.2.1'/>
+      <p n='uses:' v='javax.servlet.http,javax.servlet'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.io'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='uses:' v='javax.microedition.io'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.jdbc'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='uses:' v='javax.sql'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.jndi'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='uses:' v='javax.naming.directory,javax.naming'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.jpa'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='uses:' v='javax.persistence'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.log'/>
+      <p n='version' t='version' v='1.3.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.metatype'/>
+      <p n='version' t='version' v='1.2.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.monitor'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.prefs'/>
+      <p n='version' t='version' v='1.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.provisioning'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.remoteserviceadmin'/>
+      <p n='version' t='version' v='1.0.1'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.upnp'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.useradmin'/>
+      <p n='version' t='version' v='1.1.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.wireadmin'/>
+      <p n='version' t='version' v='1.0.1'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.util.measurement'/>
+      <p n='version' t='version' v='1.0.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.util.position'/>
+      <p n='version' t='version' v='1.0.1'/>
+      <p n='uses:' v='org.osgi.util.measurement'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.util.tracker'/>
+      <p n='version' t='version' v='1.5.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.util.xml'/>
+      <p n='version' t='version' v='1.0.1'/>
+      <p n='uses:' v='org.osgi.framework,javax.xml.parsers'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.microedition.io))' extend='false' multiple='false' optional='true'>Import package javax.microedition.io;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.naming))' extend='false' multiple='false' optional='true'>Import package javax.naming;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.naming.directory))' extend='false' multiple='false' optional='true'>Import package javax.naming.directory;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.persistence))' extend='false' multiple='false' optional='true'>Import package javax.persistence;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.servlet))' extend='false' multiple='false' optional='true'>Import package javax.servlet;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.http))' extend='false' multiple='false' optional='true'>Import package javax.servlet.http;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.sql))' extend='false' multiple='false' optional='true'>Import package javax.sql;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=javax.xml.parsers))' extend='false' multiple='false' optional='true'>Import package javax.xml.parsers;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework))' extend='false' multiple='false' optional='true'>Import package org.osgi.framework;resolution:=optional</require>
+  </resource>
+  <resource id='osgi.core/4.3.0.201102171602' symbolicname='osgi.core' presentationname='osgi.core' uri='http://repo1.maven.org/maven2/org/osgi/org.osgi.core/4.3.0/org.osgi.core-4.3.0.jar' version='4.3.0.201102171602'>
+    <description>OSGi Service Platform Release 4 Version 4.3, Core Interfaces and Classes for use in compiling bundles.</description>
+    <size>346533</size>
+    <license>http://opensource.org/licenses/apache2.0.php; link="http://www.apache.org/licenses/LICENSE-2.0"; description="Apache License, Version 2.0"</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='osgi.core'/>
+      <p n='presentationname' v='osgi.core'/>
+      <p n='version' t='version' v='4.3.0.201102171602'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework.startlevel'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework.wiring'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework.hooks.bundle'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework.hooks.service'/>
+      <p n='version' t='version' v='1.1.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework.hooks.resolver'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='uses:' v='org.osgi.framework.wiring'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework.launch'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.6.0'/>
+      <p n='uses:' v='javax.security.auth.x500'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.framework.hooks.weaving'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='uses:' v='org.osgi.framework.wiring'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.condpermadmin'/>
+      <p n='version' t='version' v='1.1.1'/>
+      <p n='uses:' v='org.osgi.framework,org.osgi.service.permissionadmin'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.packageadmin'/>
+      <p n='version' t='version' v='1.2.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.permissionadmin'/>
+      <p n='version' t='version' v='1.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.startlevel'/>
+      <p n='version' t='version' v='1.1.0'/>
+      <p n='uses:' v='org.osgi.framework'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.url'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=javax.security.auth.x500))' extend='false' multiple='false' optional='true'>Import package javax.security.auth.x500;resolution:=optional</require>
+  </resource>
+</repository>

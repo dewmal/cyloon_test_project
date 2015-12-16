@@ -23,7 +23,7 @@ public class FileLinkedQueue extends LinkedBlockingQueue {
             EnvironmentConfig environmentConfig = new EnvironmentConfig();
             environmentConfig.setTransactional(true);
             environmentConfig.setAllowCreate(true);
-            
+
             File file = new File("/home/dewmal/cyloon_crawler_db/" + dbName);
             if (!file.exists()) {
                 file.mkdir();
