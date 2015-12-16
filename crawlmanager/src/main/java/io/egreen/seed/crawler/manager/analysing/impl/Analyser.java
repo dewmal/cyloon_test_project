@@ -62,7 +62,7 @@ public class Analyser implements IAnalyser {
 
         @Override
         public void run() {
-            System.out.println(siteData);
+//            System.out.println(siteData);
             IndexSiteData indexSiteData = new IndexSiteData();
             try {
                 String id = dbClientService.save(siteData);
@@ -75,6 +75,7 @@ public class Analyser implements IAnalyser {
                 indexSiteData.setKeywords(siteData.getKeywords());
                 indexSiteData.setPost_id(id);
 //
+
                 solrIndexBuilder.indexing(indexSiteData);
             } catch (IOException e) {
                 e.printStackTrace();

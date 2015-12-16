@@ -73,9 +73,9 @@ public class CrawlJobMT implements Runnable {
 
                 }
                 crawler.logService.log(LogService.LOG_DEBUG, "Processed URL " + url);
-                synchronized (crawler) {
-                    crawler.addUrl(urls);
-                }
+//                synchronized (crawler) {
+                crawler.addUrl(urls);
+//                }
                 if (crawler.barrier.getNumberWaiting() == 1) {
                     crawler.barrier.await();
                 }

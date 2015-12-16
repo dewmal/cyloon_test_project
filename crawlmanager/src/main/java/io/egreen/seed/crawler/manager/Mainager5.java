@@ -57,7 +57,7 @@ public class Mainager5 {
                     String ok = "";
                     try {
                         iCrawler.crawl("ikman", "http://ikman.lk/", new IkmanLkProcessor(iAnalyser), "http://ikman.lk/", "http://ikman.lk/en/ads/ads-in-sri-lanka");
-                        iCrawler.crawl("hitad", "http://www.hitad.lk/", new HitAddProcessor(iAnalyser), "http://www.hitad.lk/", "http://www.hitad.lk/EN/property");
+                        iCrawler.crawl("hitad", "http://www.hitad.lk/", new HitAddProcessor(iAnalyser), "http://www.hitad.lk/EN/any");
                     } catch (InterruptedException e) {
                         ok = e.getMessage();
                     } catch (Exception e) {
