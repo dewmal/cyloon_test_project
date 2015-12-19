@@ -44,7 +44,7 @@ public class SolrIndexBuilderImpl implements SolrIndexBuilder {
     //    @Override
     public void indexing(IndexSiteData indexSiteData) throws IOException, SolrServerException {
         logService.log(LogService.LOG_DEBUG, indexSiteData + "");
-        System.out.println(indexSiteData);
+//        System.out.println(indexSiteData);
 //        solrClient.
 //        MultiMapSolrParams solrParams = new MultiMapSolrParams(new HashMap<String, String[]>());
 

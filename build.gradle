@@ -43,12 +43,14 @@ dependencies {
 //        transitive = false
 //    }
 
-    osgiRuntime 'org.slf4j:slf4j-simple:1.7.7'
+//    osgiRuntime 'org.slf4j:slf4j-simple:1.7.7'
     osgiRuntime 'org.apache.ant:ant:1.9.6'
 
     osgiRuntime 'org.apache.felix:org.osgi.compendium:1.4.0'
 
     osgiRuntime 'log4j:log4j:1.2.17'
+//    osgiRuntime 'org.apache.logging.log4j:log4j-slf4j-impl:2.5'
+
     osgiRuntime 'org.apache.felix:org.apache.felix.log:1.0.1'
 
 
@@ -66,7 +68,7 @@ runOsgi {
     bundles = IPOJO_ALL_BUNDLES + subprojects
 //    outDir = clientConfig ? 'client' : 'server'
     config += [
-            'felix.log.level'                         : 4,
+            'felix.log.level'                         : 3,
             'org.osgi.framework.system.packages.extra': 'sun.reflect,sun.misc,sun.nio.ch,com.sun.jdmk.comm,com.sun.tools.jconsole,sun.tools.jconsole,com.sun.javadoc,com.sun.tools.javadoc',
             'core.cyloon.crawler.path'                : '/home/dewmal/projects/production/seed/db/db.cyloon'
     ]

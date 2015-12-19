@@ -52,9 +52,9 @@ public class CrawlerMT {
     }
 
     public void crawl() {
-        logService.log(LogService.LOG_DEBUG, "Again" + dbHelper.linksQueue.size() + "");
+//        logService.log(LogService.LOG_DEBUG, "Again" + dbHelper.linksQueue.size() + "");
 
-        System.out.println("Start again - " + name + " - " + dbHelper.linksQueue.size());
+//        System.out.println("Start again - " + name + " - " + dbHelper.linksQueue.size());
         isCrawlerRun = true;
         crawlerRunning = true;
 

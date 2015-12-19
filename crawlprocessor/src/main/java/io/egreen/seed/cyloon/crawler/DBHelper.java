@@ -6,6 +6,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  * Created by dewmal on 12/9/15.
  */
 public class DBHelper {
+
     private static final String BASE = "";
     protected final LinkedBlockingQueue<String> linksQueue;
     private String dbName;

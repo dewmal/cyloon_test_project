@@ -4,7 +4,7 @@ Private-Package: io.egreen.seed.httpservice,org.glassfish.grizzly.osgi
 Bundle-Version: 0.0.0.unspecified
 Tool: Bnd-2.1.0.20130426-122213
 Bundle-Name: httpservicemodule
-Bnd-LastModified: 1450259045000
+Bnd-LastModified: 1450349151000
 Bundle-Activator: org.glassfish.grizzly.osgi.httpservice.Activator
 Created-By: 1.7.0_21 (Oracle Corporation)
 Bundle-ManifestVersion: 2
