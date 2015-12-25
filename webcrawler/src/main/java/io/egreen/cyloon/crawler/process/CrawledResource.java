@@ -7,6 +7,16 @@ public class CrawledResource {
 
     private String location;
 
+    private String site;
+
+    public String getSite() {
+        return site;
+    }
+
+    public void setSite(String site) {
+        this.site = site;
+    }
+
     public String getLocation() {
         return location;
     }

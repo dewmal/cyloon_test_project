@@ -1,13 +1,18 @@
 package io.egreen.cyloon.crawler.data;
 
+import io.egreen.cyloon.crawler.process.CrawledResource;
+import org.jongo.marshall.jackson.oid.MongoObjectId;
+
 import java.util.Date;
 import java.util.List;
 
 /**
  * Created by dewmal on 12/20/15.
  */
-public class SiteData {
+public class SiteData extends CrawledResource{
 
+    @MongoObjectId
+    private String _id;
     private String title;
     private String content;
     private String keywords;
@@ -22,6 +27,13 @@ public class SiteData {
     private String postDateTimeS;
     private String link;
 
+    public String get_id() {
+        return _id;
+    }
+
+    public void set_id(String _id) {
+        this._id = _id;
+    }
 
     public String getTitle() {
         return title;
@@ -77,6 +89,7 @@ public class SiteData {
 
     public void setLocation(String location) {
         this.location = location;
+        this.link = location;
     }
 
     public String getOwnerName() {

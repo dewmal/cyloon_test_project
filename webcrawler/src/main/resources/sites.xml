@@ -1,17 +1,12 @@
 <sites>
 
-    <seed>
-        <links>
-            <link>
-                http://ikman.lk/en/ads/ads-in-anuradhapura-1452
-            </link>
-        </links>
-        <store>
+    <title>
+        h1[itemprop=name]
+    </title>
 
-        </store>
-        <accpet>
+    <contactName>
+        .poster span
+    </contactName>
 
-        </accpet>
-    </seed>
 
 </sites>

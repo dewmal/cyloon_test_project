@@ -19,55 +19,37 @@ import java.util.regex.Pattern;
 /**
  * Created by dewmal on 12/19/15.
  */
-public class SiteDataProcessor extends SiteDataContentProcessor {
+public class IkmanLKSiteDataProcessor extends SiteDataContentProcessor {
 
 
-    public SiteDataProcessor(IContentAnalyer contentAnalyer) {
+    public IkmanLKSiteDataProcessor(IContentAnalyer contentAnalyer) {
         super(contentAnalyer);
     }
 
     public SiteData getCrawlerModel(Document doc) throws HttpStatusException {
         SiteData siteData = new SiteData();
-
-
-//        SiteData.class.getField()
-
-//        URL urlLink = new URL(url);
-
-//            Document doc = Jsoup.connect(url).userAgent("Chrome").get();
-
-
         // Title
         Elements newsHeadlines = doc.select("h1[itemprop=name]");
         String title = newsHeadlines.get(0).html();
         siteData.setTitle(title);
-//        System.out.println("title " + title);
-
-
-        //Contact Name
+//      System.out.println("title " + title);
+//      Contact Name
         Elements contactNameElm = doc.select(".poster span");
         String contactName = contactNameElm.get(0).html();
         siteData.setOwnerName(contactName);
-
-//        System.out.println("contactName " + contactName);
-
-
-        //Contact Number
+//      System.out.println("contactName " + contactName);
+//      Contact Number
         Elements contactNumbers = doc.select(".item-contact-more.is-showable ul li span");
-
         siteData.setTpNumbers(new ArrayList<String>());
         for (Element contactNumberElm : contactNumbers) {
             String contactNumber = contactNumberElm.html();
             siteData.getTpNumbers().add(contactNumber);
         }
-
-
-        //Location
+//      Location
         Elements locationElm = doc.select(".location");
         String location = locationElm.html();
         siteData.setLocation("Sri lanka, " + location);
-
-        //Date
+//      Date
         Elements dateElm = doc.select(".date");
         String date = dateElm.html();
 
@@ -80,7 +62,7 @@ public class SiteDataProcessor extends SiteDataContentProcessor {
             postDate.setYear(Calendar.getInstance().getTime().getYear());
             siteData.setPostDateTime(postDate);
         } catch (ParseException e) {
-//            e.printStackTrace();
+//      e.printStackTrace();
         }
 
         Elements amountElement = doc.select(".amount");
@@ -88,26 +70,21 @@ public class SiteDataProcessor extends SiteDataContentProcessor {
         if (amount != null) {
             amount = amount.replace(",", "");
         }
-
         try {
             siteData.setPrice(Double.parseDouble(amount));
         } catch (Exception e) {
-
         }
         Elements descriptionElm = doc.select("div[itemprop=description]");
         String description = descriptionElm.text();
         siteData.setContent(description);
-
         List<String> images = new ArrayList();
-
         Elements imageElms = doc.select("img[data-srcset]");
         L1:
         for (Element imgElm : imageElms) {
-
             String image = imgElm.attr("data-srcset");
             String[] rowImages = image.replace("//", "").split(",");
             for (String rowImage : rowImages) {
-//                System.out.println(rowImage);
+//      System.out.println(rowImage);
                 if (rowImage.contains("i.ikman-st.com") && rowImage.contains("fitted")) {
                     String imageUrl = rowImage.replace("1x", "").trim();
                     images.add("http://" + imageUrl);
@@ -115,7 +92,6 @@ public class SiteDataProcessor extends SiteDataContentProcessor {
                 break;
             }
         }
-
         siteData.setImages(images);
         return siteData;
     }

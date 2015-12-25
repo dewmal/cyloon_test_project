@@ -1,18 +1,18 @@
-package io.egreen.seed.indexing.model;
+package io.egreen.cyloon.crawler.data;
 
 import org.apache.solr.client.solrj.beans.Field;
+import org.apache.solr.client.solrj.response.RangeFacet;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by dewmal on 12/4/15.
  */
 public class IndexSiteData {
 
-    @Field(child = false)
+    @Field()
     private String post_id;
-    @Field(child = false)
-    private String id;
     @Field(child = false)
     private String title;
     @Field(child = false)
@@ -25,16 +25,10 @@ public class IndexSiteData {
     private String description;
     @Field(child = false)
     private String keywords;
+    @Field(child = false)
+    private String site;
     @Field()
     private Date post_last_update_time;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getPost_id() {
         return post_id;
@@ -100,18 +94,36 @@ public class IndexSiteData {
         this.post_last_update_time = post_last_update_time;
     }
 
+    public String getSite() {
+        return site;
+    }
+
+    public void setSite(String site) {
+        this.site = site;
+    }
+
     @Override
     public String toString() {
         return "IndexSiteData{" +
-                "post_id='" + post_id + '\'' +
-                ", id='" + id + '\'' +
-                ", title='" + title + '\'' +
+                "title='" + title + '\'' +
                 ", price=" + price +
                 ", location='" + location + '\'' +
                 ", ownerName='" + ownerName + '\'' +
                 ", description='" + description + '\'' +
                 ", keywords='" + keywords + '\'' +
+                ", site='" + site + '\'' +
                 ", post_last_update_time=" + post_last_update_time +
                 '}';
+    }
+
+    public void build(SiteData content) {
+        this.title = content.getTitle();
+        this.description = content.getContent();
+        this.keywords = content.getKeywords();
+        this.location = content.getLocation();
+        this.post_id = content.get_id();
+        this.price = content.getPrice();
+        this.post_last_update_time = content.getPostDateTime();
+        this.site = content.getSite();
     }
 }

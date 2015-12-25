@@ -27,7 +27,7 @@ public abstract class SiteDataContentProcessor<T extends CrawledResource> extend
 
     @Override
     protected boolean shouldAccept(WebPage webPage) {
-        System.out.println(webPage.getUrl());
+//        System.out.println(webPage.getUrl());
         return accept(webPage.getUrl().toString());
     }
 
@@ -36,6 +36,7 @@ public abstract class SiteDataContentProcessor<T extends CrawledResource> extend
     protected void processWebPage(WebPage webPage) throws Exception {
         T siteData = getCrawlerModel(webPage.getDocument());
         siteData.setLocation(webPage.getUrl() + "");
+        siteData.setSite(webPage.getUrl().getHost());
         siteDataIContentAnalyer.preform(siteData);
     }
 

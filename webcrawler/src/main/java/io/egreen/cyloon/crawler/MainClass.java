@@ -1,17 +1,19 @@
 package io.egreen.cyloon.crawler;
 
 import io.egreen.cyloon.crawler.analyser.IContentAnalyer;
+import io.egreen.cyloon.crawler.data.IndexSiteData;
 import io.egreen.cyloon.crawler.data.SiteData;
+import io.egreen.cyloon.crawler.dbcon.SiteDataController;
+import io.egreen.cyloon.crawler.index.SolrIndexBuilderImpl;
 import io.egreen.cyloon.crawler.process.ICrawler;
-import io.egreen.cyloon.crawler.process.custom.SiteDataProcessor;
+import io.egreen.cyloon.crawler.process.custom.HitAdLKSiteDataProcessor;
+import io.egreen.cyloon.crawler.process.custom.IkmanLKSiteDataProcessor;
 import io.egreen.cyloon.crawler.process.impl.HtmlCrawler;
 import io.egreen.cyloon.crawler.process.impl.UrlReource;
 import io.egreen.cyloon.crawler.resources.manager.URLManager;
 import io.egreen.cyloon.crawler.util.JLogger;
-import org.apache.felix.ipojo.annotations.Component;
-import org.apache.felix.ipojo.annotations.Instantiate;
-import org.apache.felix.ipojo.annotations.Invalidate;
-import org.apache.felix.ipojo.annotations.Validate;
+import org.apache.felix.ipojo.annotations.*;
+import org.apache.solr.client.solrj.SolrServerException;
 
 import java.io.IOException;
 
@@ -32,13 +34,29 @@ public class MainClass {
 
     private URLManager urlManager;
 
+    @Requires
+    private SolrIndexBuilderImpl solrIndexBuilder;
+
 
     public MainClass() {
+
+        SiteDataController siteDataController = new SiteDataController();
 
         siteDataIContentAnalyer = new IContentAnalyer<SiteData>() {
             @Override
             public void preform(SiteData content) {
 
+                String id = siteDataController.save(content);
+                content.set_id(id);
+                IndexSiteData indexSiteData = new IndexSiteData();
+                indexSiteData.build(content);
+                try {
+                    solrIndexBuilder.indexing(indexSiteData);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (SolrServerException e) {
+                    e.printStackTrace();
+                }
             }
         };
 
@@ -46,13 +64,14 @@ public class MainClass {
 
     @Validate
     public void validate() {
-        LOGGER.info("Working ");
+
 
         iCrawler = new HtmlCrawler();
-        urlManager = new URLManager(iCrawler);
+        urlManager = new URLManager(iCrawler, new SiteDataController());
 
 
-        iCrawler.registerProcess(new SiteDataProcessor(siteDataIContentAnalyer));
+        iCrawler.registerProcess(new IkmanLKSiteDataProcessor(siteDataIContentAnalyer));
+        iCrawler.registerProcess(new HitAdLKSiteDataProcessor(siteDataIContentAnalyer));
 
         iCrawler.registerProcess(urlManager);
 
