@@ -4,7 +4,6 @@ import io.egreen.cyloon.crawler.analyser.IContentAnalyer;
 import io.egreen.cyloon.crawler.data.IndexSiteData;
 import io.egreen.cyloon.crawler.data.SiteData;
 import io.egreen.cyloon.crawler.dbcon.SiteDataController;
-import io.egreen.cyloon.crawler.index.SolrIndexBuilderImpl;
 import io.egreen.cyloon.crawler.process.ICrawler;
 import io.egreen.cyloon.crawler.process.custom.HitAdLKSiteDataProcessor;
 import io.egreen.cyloon.crawler.process.custom.IkmanLKSiteDataProcessor;
@@ -12,10 +11,16 @@ import io.egreen.cyloon.crawler.process.impl.HtmlCrawler;
 import io.egreen.cyloon.crawler.process.impl.UrlReource;
 import io.egreen.cyloon.crawler.resources.manager.URLManager;
 import io.egreen.cyloon.crawler.util.JLogger;
-import org.apache.felix.ipojo.annotations.*;
+import org.apache.felix.ipojo.annotations.Component;
+import org.apache.felix.ipojo.annotations.Instantiate;
+import org.apache.felix.ipojo.annotations.Invalidate;
+import org.apache.felix.ipojo.annotations.Validate;
 import org.apache.solr.client.solrj.SolrServerException;
 
 import java.io.IOException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.regex.Pattern;
 
 /**
  * Created by dewmal on 12/17/15.
@@ -25,6 +30,8 @@ import java.io.IOException;
 public class MainClass {
 
     private static final JLogger LOGGER = JLogger.getInstance(MainClass.class);
+    private final SiteDataController siteDataController;
+    private final SolrIndexBuilderImpl solrIndexBuilder;
 
     private ICrawler iCrawler;
 
@@ -34,29 +41,45 @@ public class MainClass {
 
     private URLManager urlManager;
 
-    @Requires
-    private SolrIndexBuilderImpl solrIndexBuilder;
+
+    private ExecutorService executor = Executors.newCachedThreadPool();
 
 
     public MainClass() {
-
-        SiteDataController siteDataController = new SiteDataController();
+        solrIndexBuilder = new SolrIndexBuilderImpl();
+        siteDataController = new SiteDataController();
 
         siteDataIContentAnalyer = new IContentAnalyer<SiteData>() {
             @Override
-            public void preform(SiteData content) {
+            public void preform(final SiteData content) {
 
+
+//                        System.out.println(content);
                 String id = siteDataController.save(content);
-                content.set_id(id);
-                IndexSiteData indexSiteData = new IndexSiteData();
-                indexSiteData.build(content);
+
                 try {
-                    solrIndexBuilder.indexing(indexSiteData);
+                    solrIndexBuilder.indexing(new IndexSiteData(content));
                 } catch (IOException e) {
                     e.printStackTrace();
                 } catch (SolrServerException e) {
                     e.printStackTrace();
                 }
+
+//                        content.set_id(id);
+//                        IndexSiteData indexSiteData = new IndexSiteData();
+//                        indexSiteData.build(content);
+//                        indexSiteData.setPost_id(id);
+//                        try {
+//                            solrIndexBuilder.indexing(indexSiteData);
+//                        } catch (IOException e) {
+//
+//                            e.printStackTrace();
+//                        } catch (SolrServerException e) {
+//                            e.printStackTrace();
+//                        } finally {
+//                            System.out.println(indexSiteData);
+//
+
             }
         };
 
@@ -77,7 +100,7 @@ public class MainClass {
 
 
         try {
-            iCrawler.pushNextResouce(new UrlReource("http://www.hitad.lk/"));
+            iCrawler.pushNextResouce(new UrlReource("http://www.hitad.lk/EN//any"));
             iCrawler.pushNextResouce(new UrlReource("http://ikman.lk/en/ads/ads-in-anuradhapura-1452"));
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -98,4 +121,9 @@ public class MainClass {
         ;
     }
 
+
+    public static void main(String[] args) {
+        boolean matches = Pattern.matches("^(http|https)://ikman.lk/en/ad/.*.[^/edit|/delete|/.*]$", "http://ikman.lk/en/ad/gtx-550-ti-gaming-graphic-card-for-sale-anuradhapura");
+        System.out.println(matches);
+    }
 }

@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * HTML Web Page Crawler implementation
- * <p/>
+ * <p>
  * Created by dewmal on 12/19/15.
  */
 public class HtmlCrawler implements ICrawler, ContentProcess<Resource<URL>> {
@@ -45,8 +45,14 @@ public class HtmlCrawler implements ICrawler, ContentProcess<Resource<URL>> {
     public void pushNextResouce(Resource resource) throws InterruptedException, IOException {
 //        LOGGER.log(resource, JLogger.Level.DEBUG);
 
+
+        pushNextResouce(resource, true);
+    }
+
+    @Override
+    public void pushNextResouce(Resource resource, boolean shouldStart) {
         resources.add(resource);
-        if (!isProcessorRunning()) {
+        if (!isProcessorRunning() && shouldStart) {
             try {
                 process();
             } catch (InterruptedException e) {
@@ -54,6 +60,15 @@ public class HtmlCrawler implements ICrawler, ContentProcess<Resource<URL>> {
             } catch (Exception e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    @Override
+    public void start() {
+        try {
+            process();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -92,7 +107,7 @@ public class HtmlCrawler implements ICrawler, ContentProcess<Resource<URL>> {
 
                     }
                 }
-            }, 200, TimeUnit.MILLISECONDS);
+            },1, TimeUnit.NANOSECONDS);
             resource = resources.poll();
 //            LOGGER.info("mve to next " + resource);
         }

@@ -1,6 +1,7 @@
 package io.egreen.cyloon.crawler.data;
 
 import io.egreen.cyloon.crawler.process.CrawledResource;
+import org.apache.solr.client.solrj.beans.Field;
 import org.jongo.marshall.jackson.oid.MongoObjectId;
 
 import java.util.Date;
@@ -9,23 +10,43 @@ import java.util.List;
 /**
  * Created by dewmal on 12/20/15.
  */
-public class SiteData extends CrawledResource{
+public class SiteData extends CrawledResource {
 
     @MongoObjectId
     private String _id;
+    @Field
     private String title;
+    @Field
     private String content;
+    @Field
     private String keywords;
     private List<String> images;
+    @Field
     private double price;
+    @Field
     private String curruncy;
+    @Field
     private String location;
     private String ownerName;
     private List<String> tpNumbers;
     private String email;
+    @Field
     private Date postDateTime;
+    @Field
     private String postDateTimeS;
+    @Field
     private String link;
+
+    @Override
+    public String getLocationR() {
+        return super.getLocationR();
+    }
+
+    @Override
+    public void setLocationR(String locationR) {
+        super.setLocationR(locationR);
+        this.link = locationR;
+    }
 
     public String get_id() {
         return _id;
@@ -89,7 +110,6 @@ public class SiteData extends CrawledResource{
 
     public void setLocation(String location) {
         this.location = location;
-        this.link = location;
     }
 
     public String getOwnerName() {

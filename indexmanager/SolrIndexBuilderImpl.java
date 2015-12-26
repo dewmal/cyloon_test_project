@@ -10,6 +10,7 @@ import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
 import org.apache.solr.client.solrj.response.QueryResponse;
+import org.apache.solr.common.SolrDocumentList;
 import org.osgi.service.log.LogService;
 
 import java.io.IOException;
@@ -22,7 +23,7 @@ import java.util.List;
 @Component
 @Instantiate
 @Provides
-public class SolrIndexBuilderImpl  {
+public class SolrIndexBuilderImpl {
 
     @Requires
     private LogService logService;
@@ -46,8 +47,9 @@ public class SolrIndexBuilderImpl  {
         query.setQuery(indexSiteData.getPost_id());
 //        query.setSort(new SolrQuery.SortClause())
         QueryResponse query1 = solrClient.query(query);
-        List<IndexSiteData> beans = query1.getBeans(IndexSiteData.class);
-        if (beans != null && beans.size() == 0) {
+        SolrDocumentList results = query1.getResults();
+//        List<IndexSiteData> beans = query1.getBeans(IndexSiteData.class);
+        if (results.getNumFound() == 0) {
             solrClient.addBean(indexSiteData);
         }
         solrClient.commit();

@@ -97,8 +97,8 @@ public class IkmanLKSiteDataProcessor extends SiteDataContentProcessor {
     }
 
     public boolean accept(String base) {
-        System.out.println(base);
-        return Pattern.matches("^(http|https)://ikman.lk/en/ad/.*", base);
+//        System.out.println(base);
+        return Pattern.matches("^(http|https)://ikman.lk/en/ad/.*.[^/edit|/delete|/.*]$", base);
     }
 
 }

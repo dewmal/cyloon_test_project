@@ -16,7 +16,7 @@ public class JLogger {
     }
 
     public void log(Object o, Level level) {
-        System.out.println(aClass.getSimpleName() + " - " + new Date() + " - " + level + " - " + o);
+//        System.out.println(aClass.getSimpleName() + " - " + new Date() + " - " + level + " - " + o);
     }
 
     public void info(Object o) {

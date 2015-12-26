@@ -5,7 +5,7 @@ package io.egreen.cyloon.crawler.process;
  */
 public class CrawledResource {
 
-    private String location;
+    private String locationR;
 
     private String site;
 
@@ -17,11 +17,12 @@ public class CrawledResource {
         this.site = site;
     }
 
-    public String getLocation() {
-        return location;
+
+    public String getLocationR() {
+        return locationR;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
+    public void setLocationR(String locationR) {
+        this.locationR = locationR;
     }
 }

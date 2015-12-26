@@ -30,7 +30,7 @@ public class HitAdLKSiteDataProcessor extends SiteDataContentProcessor<SiteData>
 
     @Override
     public boolean accept(String pattern) {
-        return Pattern.matches("^(http|https)://www.hitad.lk/(EN|en|En|eN)/.*./.*.search_txt=", pattern);
+        return Pattern.matches("^(http|https)://www.hitad.lk/(EN|en|En|eN)/.*./.*.", pattern);
     }
 
     public SiteData getCrawlerModel(Document doc) throws HttpStatusException {

@@ -1,5 +1,6 @@
 package io.egreen.cyloon.crawler.resources.manager;
 
+import io.egreen.cyloon.crawler.SITEPolicy;
 import io.egreen.cyloon.crawler.data.URLObject;
 import io.egreen.cyloon.crawler.dbcon.SiteDataController;
 import io.egreen.cyloon.crawler.process.ContentProcess;
@@ -8,22 +9,17 @@ import io.egreen.cyloon.crawler.process.impl.UrlReource;
 import io.egreen.cyloon.crawler.process.impl.WebPage;
 
 import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
+import java.util.regex.Pattern;
 
 /**
  * Created by dewmal on 12/19/15.
  */
 public class URLManager implements ContentProcess<WebPage>, FeedUrls {
-
-//    static {
-//
-//        // load the sqlite-JDBC driver using the current class loader
-//        try {
-//        } catch (ClassNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//
-//    }
 
 
     private final LinkedBlockingQueue<String> urls = new LinkedBlockingQueue<String>();
@@ -33,20 +29,35 @@ public class URLManager implements ContentProcess<WebPage>, FeedUrls {
     private final ICrawlerResourceManager iCrawlerResouceManager;
     private SiteDataController siteDataController;
 
+
+    private ExecutorService executorService = Executors.newCachedThreadPool();
+
     public URLManager(ICrawlerResourceManager iCrawlerResouceManager, SiteDataController siteDataController) {
         this.iCrawlerResouceManager = iCrawlerResouceManager;
         this.siteDataController = siteDataController;
+
+        Iterator<URLObject> allLinks = siteDataController.getAllLinks();
+
+        while (allLinks.hasNext()) {
+            URLObject next = allLinks.next();
+            iCrawlerResouceManager.pushNextResouce(new UrlReource(next.getLink()), false);
+        }
+        iCrawlerResouceManager.start();
     }
 
     @Override
-    public void process(WebPage content) throws Exception {
+    public void process(final WebPage content) throws Exception {
+
         seedURLGrabber.process(content);
-
-        URLObject urlObject = new URLObject();
-        urlObject.setLink(content.getUrl() + "");
-        urlObject.setLastVisit(new Date());
-
-        siteDataController.updateLink(urlObject);
+        executorService.submit(new Runnable() {
+            @Override
+            public void run() {
+                URLObject urlObject = new URLObject();
+                urlObject.setLink(content.getUrl() + "");
+                urlObject.setLastVisit(new Date());
+                siteDataController.updateLink(urlObject);
+            }
+        });
 
     }
 
@@ -57,16 +68,39 @@ public class URLManager implements ContentProcess<WebPage>, FeedUrls {
 
 
     @Override
-    public void addUrl(String url) throws Exception {
+    public void addUrl(final String url) throws Exception {
+        boolean shouldProcess = false;
+        for (String policy : SITEPolicy.POLICIES) {
+            if (Pattern.matches(policy, url)) {
+                shouldProcess = true;
+                break;
+            }
+        }
 
-        URLObject urlObject = new URLObject();
-        urlObject.setLink(url);
-        urlObject.setLastVisit(new Date());
-        urlObject.setVisitCount(0);
-        siteDataController.updateLink(urlObject);
+//        System.out.println(url + " " + shouldProcess);
 
-        iCrawlerResouceManager.pushNextResouce(new UrlReource(url));
+        if (shouldProcess) {
+            executorService.submit(new Runnable() {
+                                       @Override
+                                       public void run() {
+                                           URLObject urlObject = new URLObject();
+                                           urlObject.setLink(url);
+                                           urlObject.setLastVisit(new Date());
+                                           urlObject.setVisitCount(0);
 
+
+                                           siteDataController.updateLink(urlObject);
+
+                                           try {
+                                               iCrawlerResouceManager.pushNextResouce(new UrlReource(url));
+                                           } catch (Exception e) {
+                                               e.printStackTrace();
+                                           }
+                                       }
+                                   }
+
+            );
+        }
     }
 
     @Override

@@ -35,7 +35,7 @@ public abstract class SiteDataContentProcessor<T extends CrawledResource> extend
     @Override
     protected void processWebPage(WebPage webPage) throws Exception {
         T siteData = getCrawlerModel(webPage.getDocument());
-        siteData.setLocation(webPage.getUrl() + "");
+        siteData.setLocationR(webPage.getUrl() + "");
         siteData.setSite(webPage.getUrl().getHost());
         siteDataIContentAnalyer.preform(siteData);
     }

@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/configmanager/configmanager.iml" filepath="$PROJECT_DIR$/configmanager/configmanager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/crawlmanager/crawlmanager.iml" filepath="$PROJECT_DIR$/crawlmanager/crawlmanager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/crawlprocessor/crawlprocessor.iml" filepath="$PROJECT_DIR$/crawlprocessor/crawlprocessor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dbclient/dbclient.iml" filepath="$PROJECT_DIR$/dbclient/dbclient.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dbsearchbridge/dbsearchbridge.iml" filepath="$PROJECT_DIR$/dbsearchbridge/dbsearchbridge.iml" />
-      <module fileurl="file://$PROJECT_DIR$/httpservicemodule/httpservicemodule.iml" filepath="$PROJECT_DIR$/httpservicemodule/httpservicemodule.iml" />
-      <module fileurl="file://$PROJECT_DIR$/indexmanager/indexmanager.iml" filepath="$PROJECT_DIR$/indexmanager/indexmanager.iml" />
       <module fileurl="file://$PROJECT_DIR$/platform.iml" filepath="$PROJECT_DIR$/platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webcrawler/webcrawler.iml" filepath="$PROJECT_DIR$/webcrawler/webcrawler.iml" />
     </modules>
   </component>
 </project>
